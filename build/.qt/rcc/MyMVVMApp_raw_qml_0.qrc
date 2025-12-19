@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/View/">
+    <file alias="View/MainWin.qml">/home/ub24/project/yutian/View/MainWin.qml</file>
+    <file alias="View/SideBar.qml">/home/ub24/project/yutian/View/SideBar.qml</file>
+  </qresource>
+</RCC>
+

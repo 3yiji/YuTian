@@ -1,0 +1,7 @@
+module View
+typeinfo MyMVVMApp.qmltypes
+prefer :/View/
+MainWin 1.0 View/MainWin.qml
+SideBar 1.0 View/SideBar.qml
+depends QtQuick
+

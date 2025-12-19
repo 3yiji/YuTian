@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "WSL",
+            "includePath": [
+                "${workspaceFolder}/**",
+
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtCore",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtGui",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtQml",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtQuick",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtWidgets"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

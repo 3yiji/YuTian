@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/MyApp/">
+    <file alias="qml/Main.qml">/home/ub24/project/qt-test/qml/Main.qml</file>
+  </qresource>
+</RCC>
+

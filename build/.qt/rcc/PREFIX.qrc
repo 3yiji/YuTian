@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="QMLProject/QMLProject.qrc">/home/ub24/project/yutian/QMLProject/QMLProject.qrc</file>
+  </qresource>
+</RCC>
+

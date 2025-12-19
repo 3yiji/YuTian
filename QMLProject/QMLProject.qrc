@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file>./content/App.qml</file>
+<file>./content/fonts/fonts.txt</file>
+<file>./content/IconList.qml</file>
+<file>./content/images/collect.svg</file>
+<file>./content/images/ranking list.svg</file>
+<file>./content/images/search.svg</file>
+<file>./content/images/setting.svg</file>
+<file>./content/images/song list.svg</file>
+<file>./content/MainWin.qml</file>
+<file>./content/MainWinForm.ui.qml</file>
+<file>./content/Screen01.ui.qml</file>
+<file>./content/Sidebar.qml</file>
+<file>./content/SidebarForm.ui.qml</file>
+</qresource>
+</RCC>

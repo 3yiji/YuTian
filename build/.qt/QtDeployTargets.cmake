@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_MyMVVMApp_FILE /home/ub24/project/yutian/build/MyMVVMApp)
+set(__QT_DEPLOY_TARGET_MyMVVMApp_TYPE EXECUTABLE)

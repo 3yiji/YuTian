@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Qt App Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/MyMVVMApp",      
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "QT_QPA_PLATFORM",
+                    "value": "xcb"
+                },
+                { "name": "QML_DEBUG", "value": "1" }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+
+            "preLaunchTask": "Qt build"
+        }
+    ]
+}
