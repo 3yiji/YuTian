@@ -68,46 +68,64 @@ include CMakeFiles/module_MyMVVMApp_aotstats_target.dir/progress.make
 
 CMakeFiles/module_MyMVVMApp_aotstats_target: .rcc/qmlcache/module_MyMVVMApp.aotstats
 
-.rcc/qmlcache/module_MyMVVMApp.aotstats: .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.aotstats
-.rcc/qmlcache/module_MyMVVMApp.aotstats: .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.aotstats
+.rcc/qmlcache/module_MyMVVMApp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats
+.rcc/qmlcache/module_MyMVVMApp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats
+.rcc/qmlcache/module_MyMVVMApp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats
 .rcc/qmlcache/module_MyMVVMApp.aotstats: .rcc/qmlcache/module_MyMVVMApp.aotstatslist
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/module_MyMVVMApp.aotstats"
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlaotstats aggregate /home/ub24/project/yutian/build/.rcc/qmlcache/module_MyMVVMApp.aotstatslist /home/ub24/project/yutian/build/.rcc/qmlcache/module_MyMVVMApp.aotstats
 
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: /home/ub24/project/yutian/View/MainWin.qml
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: .qt/rcc/qmake_View.qrc
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: .qt/rcc/qml_resources.qrc
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: View/MyMVVMApp.qmltypes
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp: View/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp, .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.aotstats"
-	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View
-	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/View/MainWin.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp /home/ub24/project/yutian/View/MainWin.qml
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: /home/ub24/project/yutian/src/View/MainWin.qml
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/MainWin.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp /home/ub24/project/yutian/src/View/MainWin.qml
 
-.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.aotstats
+.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats
 
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: /home/ub24/project/yutian/View/SideBar.qml
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: .qt/rcc/qmake_View.qrc
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: .qt/rcc/qml_resources.qrc
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: View/MyMVVMApp.qmltypes
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp: View/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp, .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.aotstats"
-	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View
-	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/View/SideBar.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp /home/ub24/project/yutian/View/SideBar.qml
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: /home/ub24/project/yutian/src/View/SearchBox.qml
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/SearchBox.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp /home/ub24/project/yutian/src/View/SearchBox.qml
 
-.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.aotstats
+.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats
 
-module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp
-module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.aotstats
-module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp
-module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.aotstats
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: /home/ub24/project/yutian/src/View/SideBar.qml
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/SideBar.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp /home/ub24/project/yutian/src/View/SideBar.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats
+
+module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp
+module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats
+module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp
+module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats
+module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp
+module_MyMVVMApp_aotstats_target: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats
 module_MyMVVMApp_aotstats_target: .rcc/qmlcache/module_MyMVVMApp.aotstats
 module_MyMVVMApp_aotstats_target: CMakeFiles/module_MyMVVMApp_aotstats_target
 module_MyMVVMApp_aotstats_target: CMakeFiles/module_MyMVVMApp_aotstats_target.dir/build.make

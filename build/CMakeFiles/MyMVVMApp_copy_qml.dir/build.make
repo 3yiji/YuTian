@@ -69,8 +69,9 @@ include CMakeFiles/MyMVVMApp_copy_qml.dir/progress.make
 CMakeFiles/MyMVVMApp_copy_qml: .qt/MyMVVMApp_qml.txt
 
 .qt/MyMVVMApp_qml.txt: /home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
-.qt/MyMVVMApp_qml.txt: /home/ub24/project/yutian/View/MainWin.qml
-.qt/MyMVVMApp_qml.txt: /home/ub24/project/yutian/View/SideBar.qml
+.qt/MyMVVMApp_qml.txt: /home/ub24/project/yutian/src/View/MainWin.qml
+.qt/MyMVVMApp_qml.txt: /home/ub24/project/yutian/src/View/SearchBox.qml
+.qt/MyMVVMApp_qml.txt: /home/ub24/project/yutian/src/View/SideBar.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying MyMVVMApp qml sources into build dir"
 	/usr/bin/cmake -DFILES_INFO_PATH=/home/ub24/project/yutian/build/.qt/MyMVVMApp_qml.cmake -P /home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 

@@ -25,10 +25,10 @@ qt_policy(SET QTP0004 NEW)
 # message(STATUS "===============================")
 
 file(GLOB_RECURSE ViewModel_FILES 
-    "ViewModel/*.cpp"
+    "src/ViewModel/*.cpp"
 )
 file(GLOB_RECURSE Model_FILES 
-    "Model/*.cpp"
+    "src/Model/*.cpp"
 )
 qt_add_executable(MyMVVMApp
     main.cpp
@@ -40,17 +40,28 @@ qt_add_executable(MyMVVMApp
 
 target_include_directories(MyMVVMApp
     PRIVATE  # 仅当前项目（MyMVVMApp）能使用该头文件路径
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/ViewModel  # ViewModel/ 目录的绝对路径
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel  # ViewModel/ 目录的绝对路径
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include
 )
+
+# 收集 View 目录下所有 .qml（自动检测新增/删除）
+file(GLOB_RECURSE QML_FILES 
+    RELATIVE
+    "${CMAKE_CURRENT_SOURCE_DIR}"
+    CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/View/*.qml"
+)
+
+message(STATUS "变量值：${QML_FILES}")  # 输出所有文件路径（空格分隔）
+message(STATUS "变量值end")
 
 qt_add_qml_module(MyMVVMApp
     URI View
     VERSION 1.0
     QML_FILES
-        View/MainWin.qml
-        View/SideBar.qml
+        ${QML_FILES}
 )
+
 
 qt_add_resources(MyMVVMApp "qml_resources"
     FILES

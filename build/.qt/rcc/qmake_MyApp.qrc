@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/MyApp">
-    <file alias="qmldir">/home/ub24/project/yutian/build/MyApp/qmldir</file>
-  </qresource>
-</RCC>
-

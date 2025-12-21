@@ -67,8 +67,9 @@ include CMakeFiles/MyMVVMApp_qmllint.dir/compiler_depend.make
 include CMakeFiles/MyMVVMApp_qmllint.dir/progress.make
 
 CMakeFiles/MyMVVMApp_qmllint: /home/ub24/software/Qt/6.10.1/gcc_64/bin/qmllint
-CMakeFiles/MyMVVMApp_qmllint: /home/ub24/project/yutian/View/MainWin.qml
-CMakeFiles/MyMVVMApp_qmllint: /home/ub24/project/yutian/View/SideBar.qml
+CMakeFiles/MyMVVMApp_qmllint: /home/ub24/project/yutian/src/View/MainWin.qml
+CMakeFiles/MyMVVMApp_qmllint: /home/ub24/project/yutian/src/View/SearchBox.qml
+CMakeFiles/MyMVVMApp_qmllint: /home/ub24/project/yutian/src/View/SideBar.qml
 CMakeFiles/MyMVVMApp_qmllint: .rcc/qmllint/MyMVVMApp.rsp
 	cd /home/ub24/project/yutian && /home/ub24/software/Qt/6.10.1/gcc_64/bin/qmllint @/home/ub24/project/yutian/build/.rcc/qmllint/MyMVVMApp.rsp
 

@@ -372,9 +372,6 @@ Qt6QmlWorkerScript_DIR:PATH=/home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6Qm
 //The directory containing a CMake configuration file for Qt6Qml.
 Qt6Qml_DIR:PATH=/home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6Qml
 
-//The directory containing a CMake configuration file for Qt6QtSvg.
-Qt6QtSvg_DIR:PATH=Qt6QtSvg_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=/home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6QuickTools
 

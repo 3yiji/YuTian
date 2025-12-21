@@ -1,14 +1,14 @@
 MyMVVMApp_autogen/timestamp: \
 	/home/ub24/project/yutian/CMakeLists.txt \
 	/home/ub24/project/yutian/Resources/Resources.qrc \
-	/home/ub24/project/yutian/ViewModel/MainWin.cpp \
-	/home/ub24/project/yutian/ViewModel/SideBar.cpp \
-	/home/ub24/project/yutian/ViewModel/app.cpp \
 	/home/ub24/project/yutian/build/.qt/qml_imports/MyMVVMApp_conf.cmake \
 	/home/ub24/project/yutian/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake \
 	/home/ub24/project/yutian/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/ub24/project/yutian/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/ub24/project/yutian/main.cpp \
+	/home/ub24/project/yutian/src/ViewModel/MainWin.cpp \
+	/home/ub24/project/yutian/src/ViewModel/SideBar.cpp \
+	/home/ub24/project/yutian/src/ViewModel/app.cpp \
 	/home/ub24/project/yutian/temp/temp.cpp \
 	/home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6/FindWrapAtomic.cmake \
 	/home/ub24/software/Qt/6.10.1/gcc_64/lib/cmake/Qt6/FindWrapOpenGL.cmake \

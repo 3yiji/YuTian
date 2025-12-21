@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/ub24/project/yutian/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -385,78 +386,6 @@ MyMVVMApp_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.s
 .PHONY : MyMVVMApp_autogen/mocs_compilation.cpp.s
 
-ViewModel/MainWin.o: ViewModel/MainWin.cpp.o
-.PHONY : ViewModel/MainWin.o
-
-# target to build an object file
-ViewModel/MainWin.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/MainWin.cpp.o
-.PHONY : ViewModel/MainWin.cpp.o
-
-ViewModel/MainWin.i: ViewModel/MainWin.cpp.i
-.PHONY : ViewModel/MainWin.i
-
-# target to preprocess a source file
-ViewModel/MainWin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/MainWin.cpp.i
-.PHONY : ViewModel/MainWin.cpp.i
-
-ViewModel/MainWin.s: ViewModel/MainWin.cpp.s
-.PHONY : ViewModel/MainWin.s
-
-# target to generate assembly for a file
-ViewModel/MainWin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/MainWin.cpp.s
-.PHONY : ViewModel/MainWin.cpp.s
-
-ViewModel/SideBar.o: ViewModel/SideBar.cpp.o
-.PHONY : ViewModel/SideBar.o
-
-# target to build an object file
-ViewModel/SideBar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/SideBar.cpp.o
-.PHONY : ViewModel/SideBar.cpp.o
-
-ViewModel/SideBar.i: ViewModel/SideBar.cpp.i
-.PHONY : ViewModel/SideBar.i
-
-# target to preprocess a source file
-ViewModel/SideBar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/SideBar.cpp.i
-.PHONY : ViewModel/SideBar.cpp.i
-
-ViewModel/SideBar.s: ViewModel/SideBar.cpp.s
-.PHONY : ViewModel/SideBar.s
-
-# target to generate assembly for a file
-ViewModel/SideBar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/SideBar.cpp.s
-.PHONY : ViewModel/SideBar.cpp.s
-
-ViewModel/app.o: ViewModel/app.cpp.o
-.PHONY : ViewModel/app.o
-
-# target to build an object file
-ViewModel/app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/app.cpp.o
-.PHONY : ViewModel/app.cpp.o
-
-ViewModel/app.i: ViewModel/app.cpp.i
-.PHONY : ViewModel/app.i
-
-# target to preprocess a source file
-ViewModel/app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/app.cpp.i
-.PHONY : ViewModel/app.cpp.i
-
-ViewModel/app.s: ViewModel/app.cpp.s
-.PHONY : ViewModel/app.s
-
-# target to generate assembly for a file
-ViewModel/app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/ViewModel/app.cpp.s
-.PHONY : ViewModel/app.cpp.s
-
 build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.o: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o
 .PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.o
 
@@ -553,54 +482,6 @@ build/.qt/rcc/qrc_qml_resources.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.s
 .PHONY : build/.qt/rcc/qrc_qml_resources.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.o: build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.o
-
-# target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.o
-
-build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.i: build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.i
-
-# target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.i
-
-build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.s: build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.s
-
-# target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp.s
-
-build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.o: build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.o
-
-# target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.o
-
-build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.i: build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.i
-
-# target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.i
-
-build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.s: build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.s
-
-# target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp.s
-
 build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.o: build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o
 .PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.o
 
@@ -624,6 +505,78 @@ build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.s: build/.rcc/qmlcache/MyMVVMApp_q
 build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s
 .PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -672,6 +625,78 @@ mymvvmapp_qmltyperegistrations.s: mymvvmapp_qmltyperegistrations.cpp.s
 mymvvmapp_qmltyperegistrations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.s
 .PHONY : mymvvmapp_qmltyperegistrations.cpp.s
+
+src/ViewModel/MainWin.o: src/ViewModel/MainWin.cpp.o
+.PHONY : src/ViewModel/MainWin.o
+
+# target to build an object file
+src/ViewModel/MainWin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o
+.PHONY : src/ViewModel/MainWin.cpp.o
+
+src/ViewModel/MainWin.i: src/ViewModel/MainWin.cpp.i
+.PHONY : src/ViewModel/MainWin.i
+
+# target to preprocess a source file
+src/ViewModel/MainWin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.i
+.PHONY : src/ViewModel/MainWin.cpp.i
+
+src/ViewModel/MainWin.s: src/ViewModel/MainWin.cpp.s
+.PHONY : src/ViewModel/MainWin.s
+
+# target to generate assembly for a file
+src/ViewModel/MainWin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.s
+.PHONY : src/ViewModel/MainWin.cpp.s
+
+src/ViewModel/SideBar.o: src/ViewModel/SideBar.cpp.o
+.PHONY : src/ViewModel/SideBar.o
+
+# target to build an object file
+src/ViewModel/SideBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o
+.PHONY : src/ViewModel/SideBar.cpp.o
+
+src/ViewModel/SideBar.i: src/ViewModel/SideBar.cpp.i
+.PHONY : src/ViewModel/SideBar.i
+
+# target to preprocess a source file
+src/ViewModel/SideBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.i
+.PHONY : src/ViewModel/SideBar.cpp.i
+
+src/ViewModel/SideBar.s: src/ViewModel/SideBar.cpp.s
+.PHONY : src/ViewModel/SideBar.s
+
+# target to generate assembly for a file
+src/ViewModel/SideBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.s
+.PHONY : src/ViewModel/SideBar.cpp.s
+
+src/ViewModel/app.o: src/ViewModel/app.cpp.o
+.PHONY : src/ViewModel/app.o
+
+# target to build an object file
+src/ViewModel/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o
+.PHONY : src/ViewModel/app.cpp.o
+
+src/ViewModel/app.i: src/ViewModel/app.cpp.i
+.PHONY : src/ViewModel/app.i
+
+# target to preprocess a source file
+src/ViewModel/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.i
+.PHONY : src/ViewModel/app.cpp.i
+
+src/ViewModel/app.s: src/ViewModel/app.cpp.s
+.PHONY : src/ViewModel/app.s
+
+# target to generate assembly for a file
+src/ViewModel/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.s
+.PHONY : src/ViewModel/app.cpp.s
 
 temp/temp.o: temp/temp.cpp.o
 .PHONY : temp/temp.o
@@ -728,15 +753,6 @@ help:
 	@echo "... MyMVVMApp_autogen/mocs_compilation.o"
 	@echo "... MyMVVMApp_autogen/mocs_compilation.i"
 	@echo "... MyMVVMApp_autogen/mocs_compilation.s"
-	@echo "... ViewModel/MainWin.o"
-	@echo "... ViewModel/MainWin.i"
-	@echo "... ViewModel/MainWin.s"
-	@echo "... ViewModel/SideBar.o"
-	@echo "... ViewModel/SideBar.i"
-	@echo "... ViewModel/SideBar.s"
-	@echo "... ViewModel/app.o"
-	@echo "... ViewModel/app.i"
-	@echo "... ViewModel/app.s"
 	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.o"
 	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.i"
 	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.s"
@@ -749,21 +765,33 @@ help:
 	@echo "... build/.qt/rcc/qrc_qml_resources.o"
 	@echo "... build/.qt/rcc/qrc_qml_resources.i"
 	@echo "... build/.qt/rcc/qrc_qml_resources.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.s"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.o"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.i"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... mymvvmapp_qmltyperegistrations.o"
 	@echo "... mymvvmapp_qmltyperegistrations.i"
 	@echo "... mymvvmapp_qmltyperegistrations.s"
+	@echo "... src/ViewModel/MainWin.o"
+	@echo "... src/ViewModel/MainWin.i"
+	@echo "... src/ViewModel/MainWin.s"
+	@echo "... src/ViewModel/SideBar.o"
+	@echo "... src/ViewModel/SideBar.i"
+	@echo "... src/ViewModel/SideBar.s"
+	@echo "... src/ViewModel/app.o"
+	@echo "... src/ViewModel/app.i"
+	@echo "... src/ViewModel/app.s"
 	@echo "... temp/temp.o"
 	@echo "... temp/temp.i"
 	@echo "... temp/temp.s"
@@ -778,6 +806,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/ub24/project/yutian/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,16 @@
 // mock-tool.js：模拟工具的 API 环境，调用脚本
 const fs = require('fs');               // fs = File System（文件系统模块
 const path = require('path');           // path = 路径模块
+const crypto = require('crypto');       // crypto = 加密模块
+const zlib = require('zlib');           // zlib = 压缩模块
+const { promisify } = require('util');  // promisify = 将回调函数转为 Promise
 const lxRequest = require('./lx-request.js'); // 路径要和 lx-request.js 一致
+
+const {lxUtils} = require('./lxTools.ts'); // 引入 lxTools 模块（路径要和 lxTools.js 一致）
+// import lxTools from './lxTools.ts';
+// 将 zlib 的回调函数转为 Promise
+const inflateAsync = promisify(zlib.inflate);
+const deflateAsync = promisify(zlib.deflate);
 
 // 1. 模拟 globalThis.lx 对象（按 API 规范实现核心方法）
 globalThis.lx = {                           // 定义全局 lx 对象
@@ -31,27 +40,46 @@ globalThis.lx = {                           // 定义全局 lx 对象
     // 模拟 HTTP 请求（按 API 规范实现）
     request: lxRequest,
     // 模拟工具方法（按 API 规范实现）
-    utils: {
-        buffer: {
-            from: (data) => Buffer.from(data),
-            bufToString: (buf, format) => buf.toString(format),
-        },
-        crypto: {
-            md5: (str) => require('crypto').createHash('md5').update(str).digest('hex'),
-            aesEncrypt: () => {}, // 按脚本需求实现，或留空（若脚本不依赖）
-            randomBytes: (size) => require('crypto').randomBytes(size),
-        },
-        zlib: {
-            inflate: (buf) => Promise.resolve(buf),
-            deflate: (buf) => Promise.resolve(buf),
-        },
-    },
+    // utils: {
+    //     buffer: {
+    //         from: (data) => Buffer.from(data),
+    //         bufToString: (buf, format) => buf.toString(format),
+    //     },
+    //     crypto: {
+    //         // MD5 加密
+    //         md5: (str) => crypto.createHash('md5').update(str).digest('hex'),
+            
+    //         // AES 加密 aesEncrypt(buffer, mode, key, iv)
+    //         // mode: 加密模式，如 'aes-128-cbc', 'aes-256-cbc' 等
+    //         aesEncrypt: (buffer, mode, key, iv) => {
+    //             const cipher = crypto.createCipheriv(mode, key, iv);
+    //             return Buffer.concat([cipher.update(buffer), cipher.final()]);
+    //         },
+            
+    //         // 生成随机字节
+    //         randomBytes: (size) => crypto.randomBytes(size),
+            
+    //         // RSA 加密 rsaEncrypt(buffer, key)
+    //         // key: PEM 格式的公钥字符串
+    //         rsaEncrypt: (buffer, key) => {
+    //             return crypto.publicEncrypt(key, buffer);
+    //         },
+    //     },
+    //     zlib: {
+    //         // 解压 inflate(buffer: Buffer) => Promise<Buffer>
+    //         inflate: (buf) => inflateAsync(buf),
+            
+    //         // 压缩 deflate(buffer: Buffer) => Promise<Buffer>
+    //         deflate: (buf) => deflateAsync(buf),
+    //     },
+    // },
+    utils: lxUtils,
 };
 
 // 2. 模拟工具调用 request 事件（触发脚本获取音乐 URL）
 async function mockRequest(sources) {
   // 选择脚本支持的源（如 sources 中的 mg 键）
-  const sourceKey = Object.keys(sources)[1]; // 如 "mg"
+  const sourceKey = Object.keys(sources)[4]; // 如 "mg"
   if (!sourceKey) {
     console.log("脚本未声明支持的源");
     return;
@@ -67,9 +95,10 @@ async function mockRequest(sources) {
         // id: "123456", // 模拟歌曲 ID（需替换为脚本支持的真实 ID）
         name: "成都",
         singer: "赵雷",
-        songmid:"富士山下",
+        songmid: "1106531626",
         hash: "a06b033b356bfc974c5245d0195086a5",
         albumId: 1802652,
+        id: 1106531626,
       },
     },
   };

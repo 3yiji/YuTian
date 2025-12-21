@@ -5,14 +5,21 @@
 #include <QtCore/qstring.h>
 
 namespace QmlCacheGeneratedCode {
-namespace _0x5f_View_View_MainWin_qml { 
+namespace _0x5f_View_src_View_MainWin_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_View_View_SideBar_qml { 
+namespace _0x5f_View_src_View_SearchBox_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_View_src_View_SideBar_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -33,8 +40,9 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 
 Registry::Registry() {
-    resourcePathToCachedUnit.insert(QStringLiteral("/View/View/MainWin.qml"), &QmlCacheGeneratedCode::_0x5f_View_View_MainWin_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/View/View/SideBar.qml"), &QmlCacheGeneratedCode::_0x5f_View_View_SideBar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/MainWin.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_MainWin_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/SearchBox.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_SearchBox_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/SideBar.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_SideBar_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

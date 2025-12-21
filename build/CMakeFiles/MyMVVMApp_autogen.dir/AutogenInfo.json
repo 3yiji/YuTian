@@ -939,8 +939,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/ub24/project/yutian/include/ViewModel",
-		"/home/ub24/project/yutian/include",
+		"/home/ub24/project/yutian/src/include/ViewModel",
+		"/home/ub24/project/yutian/src/include",
 		"/home/ub24/project/yutian",
 		"/home/ub24/software/Qt/6.10.1/gcc_64/include/QtQml",
 		"/home/ub24/software/Qt/6.10.1/gcc_64/include",
@@ -988,9 +988,10 @@
 		"/home/ub24/project/yutian/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp",
 		"/home/ub24/project/yutian/build/.qt/rcc/qrc_qmake_View.cpp",
 		"/home/ub24/project/yutian/build/.qt/rcc/qrc_qml_resources.cpp",
-		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp",
-		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp",
 		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp",
+		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp",
+		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp",
+		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp",
 		"/home/ub24/project/yutian/build/mymvvmapp_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
@@ -1003,10 +1004,10 @@
 	"SETTINGS_FILE" : "/home/ub24/project/yutian/build/CMakeFiles/MyMVVMApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/ub24/project/yutian/ViewModel/MainWin.cpp", "MU", null ],
-		[ "/home/ub24/project/yutian/ViewModel/SideBar.cpp", "MU", null ],
-		[ "/home/ub24/project/yutian/ViewModel/app.cpp", "MU", null ],
 		[ "/home/ub24/project/yutian/main.cpp", "MU", null ],
+		[ "/home/ub24/project/yutian/src/ViewModel/MainWin.cpp", "MU", null ],
+		[ "/home/ub24/project/yutian/src/ViewModel/SideBar.cpp", "MU", null ],
+		[ "/home/ub24/project/yutian/src/ViewModel/app.cpp", "MU", null ],
 		[ "/home/ub24/project/yutian/temp/temp.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
@@ -1017,9 +1018,10 @@
 		"/home/ub24/project/yutian/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp",
 		"/home/ub24/project/yutian/build/.qt/rcc/qrc_qmake_View.cpp",
 		"/home/ub24/project/yutian/build/.qt/rcc/qrc_qml_resources.cpp",
-		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View/MainWin_qml.cpp",
-		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_View/SideBar_qml.cpp",
 		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp",
+		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp",
+		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp",
+		"/home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp",
 		"/home/ub24/project/yutian/build/mymvvmapp_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],

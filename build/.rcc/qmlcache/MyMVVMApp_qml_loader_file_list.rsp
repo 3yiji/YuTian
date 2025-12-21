@@ -6,5 +6,6 @@
 /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
 --resource
 /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc
-/View/View/MainWin.qml
-/View/View/SideBar.qml
+/View/src/View/MainWin.qml
+/View/src/View/SearchBox.qml
+/View/src/View/SideBar.qml

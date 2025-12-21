@@ -225,7 +225,7 @@ function lxRequest(url, options = {}, callback) {
             const contentType = resp.headers.get('content-type') || '';
             let responseBody = null;
 
-            if (contentType.includes('application/json')) {
+            if (contentType.includes('application/json') || contentType.includes('text/')) {
                 responseBody = await resp.json().catch((err) => {
                     console.log(`${requestId} JSON 解析失败: ${err.message}`);
                     return null;
@@ -242,6 +242,7 @@ function lxRequest(url, options = {}, callback) {
                 console.log(`  类型: ${contentType}`);
                 console.log(`  大小: ${responseBody.length} 字节`);
             } 
+    
             else {
                 responseBody = await resp.text().catch((err) => {
                     console.log(`${requestId} 文本解析失败: ${err.message}`);
@@ -249,7 +250,7 @@ function lxRequest(url, options = {}, callback) {
                 });
                 // 调试日志：文本响应体
                 console.log(`${requestId} 响应体（文本）:`);
-                // console.log(responseBody || '解析失败/空响应');
+                console.log(responseBody || '解析失败/空响应');
             }
 
             console.log(`${requestId} 请求成功完成`);
@@ -260,38 +261,40 @@ function lxRequest(url, options = {}, callback) {
             response.body = responseBody;
             callback(null, response);
         })
-        .catch((err) => {
-            // 调试日志：请求错误详情
-            let errorType = err.name || 'UnknownError';
-            let errorMessage = err.message;
+        // .catch((err) => {
+        //     // 调试日志：请求错误详情
+        //     let errorType = err.name || 'UnknownError';
+        //     let errorMessage = err.message;
 
-            if (err.name === 'AbortError') {
-                errorType = 'RequestAborted';
-                errorMessage = '请求被取消';
-            } else if (err.type === 'request-timeout') {
-                errorType = 'RequestTimeout';
-                errorMessage = `请求超时（${timeout}ms）`;
-            } else if (err.code === 'ENOTFOUND') {
-                errorType = 'DNSNotFound';
-                errorMessage = `DNS 解析失败: ${err.hostname}`;
-            } else if (err.code === 'ECONNREFUSED') {
-                errorType = 'ConnectionRefused';
-                errorMessage = `连接被拒绝: ${url}`;
-            }
+        //     // if (err.name === 'AbortError') {
+        //     //     errorType = 'RequestAborted';
+        //     //     errorMessage = '请求被取消';
+        //     // } else if (err.type === 'request-timeout') {
+        //     //     errorType = 'RequestTimeout';
+        //     //     errorMessage = `请求超时（${timeout}ms）`;
+        //     // } else if (err.code === 'ENOTFOUND') {
+        //     //     errorType = 'DNSNotFound';
+        //     //     errorMessage = `DNS 解析失败: ${err.hostname}`;
+        //     // } else if (err.code === 'ECONNREFUSED') {
+        //     //     errorType = 'ConnectionRefused';
+        //     //     errorMessage = `连接被拒绝: ${url}`;
+        //     // }
 
-            console.log('\n==================================================');
-            console.log(`${requestId} 请求失败`);
-            console.log(`${requestId} 错误类型: ${errorType}`);
-            console.log(`${requestId} 错误信息: ${errorMessage}`);
-            if (err.stack) {
-                console.log(`${requestId} 错误堆栈:`);
-                console.log(err.stack.slice(0, 500)); // 只输出前500字符，避免日志过长
-            }
-            console.log('==================================================\n');
+        //     console.log('\n==================================================');
+        //     console.log(`${requestId} 请求失败`);
+        //     console.log(`${requestId} 错误类型: ${errorType}`);
+        //     console.log(`${requestId} 错误信息: ${errorMessage}`);
+        //     if (err.stack) {
+        //         console.log(`${requestId} 错误堆栈:`);
+        //         console.log(err.stack.slice(0, 500)); // 只输出前500字符，避免日志过长
+        //     }
+        //     console.log('==================================================\n');
 
-            // 调用回调返回错误
-            callback(new Error(`${errorType}: ${errorMessage}`), null, null);
-        });
+        //     // 调用回调返回错误
+        //     callback(new Error(`${errorType}: ${errorMessage}`), null, null);
+        // });
+
+
 
     // 6. 返回取消请求方法
     return function cancelRequest() {
