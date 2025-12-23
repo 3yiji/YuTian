@@ -1,0 +1,23 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 5,
+                            "message": "Could not find property \"centerIn\"."
+                        }
+                    ],
+                    "filePath": "/home/ub24/project/yutian/src/View/RigthContent/Favorites.qml"
+                }
+            ],
+            "moduleId": "View(MyMVVMApp)"
+        }
+    ]
+}

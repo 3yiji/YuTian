@@ -123,6 +123,111 @@ View/MyMVVMApp.qmltypes: mymvvmapp_qmltyperegistrations.cpp
 .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats
 
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/Favorites.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/Favorites.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp /home/ub24/project/yutian/src/View/RightContent/Favorites.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.aotstats
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/Ranking.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/Ranking.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp /home/ub24/project/yutian/src/View/RightContent/Ranking.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.aotstats
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/SearchPage.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/SearchPage.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp /home/ub24/project/yutian/src/View/RightContent/SearchPage.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.aotstats
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/Settings.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/Settings.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp /home/ub24/project/yutian/src/View/RightContent/Settings.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.aotstats
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/SongList.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/SongList.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp /home/ub24/project/yutian/src/View/RightContent/SongList.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.aotstats
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/searchpage/Song.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/searchpage/Song.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp /home/ub24/project/yutian/src/View/RightContent/searchpage/Song.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.aotstats
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: /home/ub24/project/yutian/src/View/RightContent/searchpage/SongList.qml
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/RightContent/searchpage/SongList.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp /home/ub24/project/yutian/src/View/RightContent/searchpage/SongList.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.aotstats
+
 .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
 .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: /home/ub24/project/yutian/src/View/SearchBox.qml
 .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: .qt/rcc/qmake_View.qrc
@@ -131,7 +236,7 @@ View/MyMVVMApp.qmltypes: mymvvmapp_qmltyperegistrations.cpp
 .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: .qt/rcc/qml_resources.qrc
 .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: View/MyMVVMApp.qmltypes
 .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp: View/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats"
 	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/SearchBox.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp /home/ub24/project/yutian/src/View/SearchBox.qml
 
@@ -146,36 +251,62 @@ View/MyMVVMApp.qmltypes: mymvvmapp_qmltyperegistrations.cpp
 .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: .qt/rcc/qml_resources.qrc
 .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: View/MyMVVMApp.qmltypes
 .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp: View/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats"
 	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/SideBar.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp /home/ub24/project/yutian/src/View/SideBar.qml
 
 .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats
 
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: /home/ub24/project/yutian/src/View/common/Theme.qml
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: .qt/rcc/qmake_View.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: .qt/rcc/qml_resources.qrc
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: View/MyMVVMApp.qmltypes
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp: View/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp, .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/common
+	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlcachegen --bare --resource-path /View/src/View/common/Theme.qml -I /home/ub24/project/yutian/build -I /home/ub24/software/Qt/6.10.1/gcc_64/qml -i /home/ub24/project/yutian/build/View/qmldir --resource /home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc --resource /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc --dump-aot-stats "--module-id=View(MyMVVMApp)" -o /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp /home/ub24/project/yutian/src/View/common/Theme.qml
+
+.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.aotstats: .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.aotstats
+
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/MainWin.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/Favorites.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/Ranking.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/SearchPage.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/Settings.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/SongList.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/searchpage/Song.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/RightContent/searchpage/SongList.qml
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/SearchBox.qml
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/SideBar.qml
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/project/yutian/src/View/common/Theme.qml
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: .qt/rcc/MyMVVMApp_raw_qml_0.qrc
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running rcc for resource MyMVVMApp_raw_qml_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Running rcc for resource MyMVVMApp_raw_qml_0"
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc --output /home/ub24/project/yutian/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp --name MyMVVMApp_raw_qml_0 /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0.qrc
 
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp: View/src/View/qmldir
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp: View/src/View/RightContent/qmldir
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp: View/src/View/RightContent/searchpage/qmldir
+.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp: View/src/View/common/qmldir
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
 .qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running rcc for resource MyMVVMApp_raw_qml_0_extra_qmldirs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Running rcc for resource MyMVVMApp_raw_qml_0_extra_qmldirs"
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc --output /home/ub24/project/yutian/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp --name MyMVVMApp_raw_qml_0_extra_qmldirs /home/ub24/project/yutian/build/.qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
 
 .qt/rcc/qrc_qml_resources.cpp: /home/ub24/project/yutian/Resources/Resources.qrc
 .qt/rcc/qrc_qml_resources.cpp: .qt/rcc/qml_resources.qrc
 .qt/rcc/qrc_qml_resources.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running rcc for resource qml_resources"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Running rcc for resource qml_resources"
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc --output /home/ub24/project/yutian/build/.qt/rcc/qrc_qml_resources.cpp --name qml_resources /home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc
 
 MyMVVMApp_autogen/timestamp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/moc
 MyMVVMApp_autogen/timestamp: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Automatic MOC and UIC for target MyMVVMApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Automatic MOC and UIC for target MyMVVMApp"
 	/usr/bin/cmake -E cmake_autogen /home/ub24/project/yutian/build/CMakeFiles/MyMVVMApp_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/ub24/project/yutian/build/MyMVVMApp_autogen/timestamp
 
@@ -187,22 +318,22 @@ MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp: /home/ub24/project/yutian/Resour
 MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp: /home/ub24/project/yutian/Resources/images/song\ list.svg
 MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp: /home/ub24/project/yutian/Resources/images/setting.svg
 MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Automatic RCC for Resources/Resources.qrc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Automatic RCC for Resources/Resources.qrc"
 	/usr/bin/cmake -E cmake_autorcc /home/ub24/project/yutian/build/CMakeFiles/MyMVVMApp_autogen.dir/AutoRcc_Resources_S5YYZ2ZCNV_Info.json 
 
 meta_types/MyMVVMApp_json_file_list.txt: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/cmake_automoc_parser
 meta_types/MyMVVMApp_json_file_list.txt: MyMVVMApp_autogen/timestamp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running AUTOMOC file extraction for target MyMVVMApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Running AUTOMOC file extraction for target MyMVVMApp"
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/cmake_automoc_parser --cmake-autogen-cache-file /home/ub24/project/yutian/build/CMakeFiles/MyMVVMApp_autogen.dir/ParseCache.txt --cmake-autogen-info-file /home/ub24/project/yutian/build/CMakeFiles/MyMVVMApp_autogen.dir/AutogenInfo.json --output-file-path /home/ub24/project/yutian/build/meta_types/MyMVVMApp_json_file_list.txt --timestamp-file-path /home/ub24/project/yutian/build/meta_types/MyMVVMApp_json_file_list.txt.timestamp --cmake-autogen-include-dir-path /home/ub24/project/yutian/build/MyMVVMApp_autogen/include
 
 meta_types/qt6mymvvmapp_metatypes.json: meta_types/qt6mymvvmapp_metatypes.json.gen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating meta_types/qt6mymvvmapp_metatypes.json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating meta_types/qt6mymvvmapp_metatypes.json"
 	/usr/bin/cmake -E true
 
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o: MyMVVMApp_autogen/mocs_compilation.cpp
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o -MF CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o -c /home/ub24/project/yutian/build/MyMVVMApp_autogen/mocs_compilation.cpp
 
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.i: cmake_force
@@ -216,7 +347,7 @@ CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/main.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/main.cpp.o: /home/ub24/project/yutian/main.cpp
 CMakeFiles/MyMVVMApp.dir/main.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyMVVMApp.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyMVVMApp.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/main.cpp.o -MF CMakeFiles/MyMVVMApp.dir/main.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/main.cpp.o -c /home/ub24/project/yutian/main.cpp
 
 CMakeFiles/MyMVVMApp.dir/main.cpp.i: cmake_force
@@ -230,7 +361,7 @@ CMakeFiles/MyMVVMApp.dir/main.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o: /home/ub24/project/yutian/temp/temp.cpp
 CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o -MF CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o -c /home/ub24/project/yutian/temp/temp.cpp
 
 CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.i: cmake_force
@@ -244,7 +375,7 @@ CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o: /home/ub24/project/yutian/src/ViewModel/MainWin.cpp
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o -MF CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o -c /home/ub24/project/yutian/src/ViewModel/MainWin.cpp
 
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.i: cmake_force
@@ -258,7 +389,7 @@ CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o: /home/ub24/project/yutian/src/ViewModel/SideBar.cpp
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o -MF CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o -c /home/ub24/project/yutian/src/ViewModel/SideBar.cpp
 
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.i: cmake_force
@@ -272,7 +403,7 @@ CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o: /home/ub24/project/yutian/src/ViewModel/app.cpp
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o -MF CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o -c /home/ub24/project/yutian/src/ViewModel/app.cpp
 
 CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.i: cmake_force
@@ -286,7 +417,7 @@ CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o: mymvvmapp_qmltyperegistrations.cpp
 CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o -MF CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o -c /home/ub24/project/yutian/build/mymvvmapp_qmltyperegistrations.cpp
 
 CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.i: cmake_force
@@ -300,7 +431,7 @@ CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o: .qt/rcc/qrc_qmake_View.cpp
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o -c /home/ub24/project/yutian/build/.qt/rcc/qrc_qmake_View.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.i: cmake_force
@@ -314,7 +445,7 @@ CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o: .rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.i: cmake_force
@@ -328,7 +459,7 @@ CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s: cm
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i: cmake_force
@@ -339,10 +470,108 @@ CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
 
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
+
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i: cmake_force
@@ -356,7 +585,7 @@ CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cp
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i: cmake_force
@@ -367,10 +596,24 @@ CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
 
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o: .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o -c /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp > CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
+
+CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub24/project/yutian/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp -o CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
+
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o: .qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o -c /home/ub24/project/yutian/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.i: cmake_force
@@ -384,7 +627,7 @@ CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.s: cmake_forc
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o: .qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o -c /home/ub24/project/yutian/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.i: cmake_force
@@ -398,7 +641,7 @@ CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o: .qt/rcc/qrc_qml_resources.cpp
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o -MF CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o -c /home/ub24/project/yutian/build/.qt/rcc/qrc_qml_resources.cpp
 
 CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.i: cmake_force
@@ -412,7 +655,7 @@ CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.s: cmake_force
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o: CMakeFiles/MyMVVMApp.dir/flags.make
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o: MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o: CMakeFiles/MyMVVMApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o -MF CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o.d -o CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o -c /home/ub24/project/yutian/build/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp
 
 CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i: cmake_force
@@ -435,8 +678,16 @@ MyMVVMApp_OBJECTS = \
 "CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o" \
+"CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o" \
 "CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o" \
@@ -455,8 +706,16 @@ MyMVVMApp: CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
+MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o
@@ -472,7 +731,7 @@ MyMVVMApp: /usr/lib/x86_64-linux-gnu/libGLX.so
 MyMVVMApp: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 MyMVVMApp: /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Core.so.6.10.1
 MyMVVMApp: CMakeFiles/MyMVVMApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable MyMVVMApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX executable MyMVVMApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyMVVMApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -490,10 +749,26 @@ CMakeFiles/MyMVVMApp.dir/depend: .qt/rcc/qrc_qml_resources.cpp
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.aotstats
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.aotstats
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp
 CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.aotstats
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp
+CMakeFiles/MyMVVMApp.dir/depend: .rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.aotstats
 CMakeFiles/MyMVVMApp.dir/depend: MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp
 CMakeFiles/MyMVVMApp.dir/depend: MyMVVMApp_autogen/timestamp
 CMakeFiles/MyMVVMApp.dir/depend: View/MyMVVMApp.qmltypes

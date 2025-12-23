@@ -74,8 +74,16 @@ CMakeFiles/MyMVVMApp_qmlimportscan: .qt/qml_imports/MyMVVMApp_build.cmake
 .qt/qml_imports/MyMVVMApp_build.cmake: .qt/rcc/MyMVVMApp_raw_qml_0_extra_qmldirs.qrc
 .qt/qml_imports/MyMVVMApp_build.cmake: .qt/rcc/qml_resources.qrc
 .qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/MainWin.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/Favorites.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/Ranking.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/SearchPage.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/Settings.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/SongList.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/searchpage/Song.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/RightContent/searchpage/SongList.qml
 .qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/SearchBox.qml
 .qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/SideBar.qml
+.qt/qml_imports/MyMVVMApp_build.cmake: /home/ub24/project/yutian/src/View/common/Theme.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running qmlimportscanner for MyMVVMApp"
 	cd /home/ub24/project/yutian && /home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlimportscanner @/home/ub24/project/yutian/build/.qt/qml_imports/MyMVVMApp_build.rsp
 

@@ -52,6 +52,12 @@ file(GLOB_RECURSE QML_FILES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/View/*.qml"
 )
 
+set(qml_singletons
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/View/common/Theme.qml"
+)
+set_source_files_properties(${qml_singletons}       # 设置为单例
+    PROPERTIES QT_QML_SINGLETON_TYPE TRUE)
+
 message(STATUS "变量值：${QML_FILES}")  # 输出所有文件路径（空格分隔）
 message(STATUS "变量值end")
 

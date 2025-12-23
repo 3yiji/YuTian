@@ -530,6 +530,174 @@ build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
 .PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
 
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
+
 build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
 .PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o
 
@@ -577,6 +745,30 @@ build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s: build/.rcc/qmlcache/MyMVVM
 build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
 .PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
+
+build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -771,12 +963,36 @@ help:
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.s"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i"
 	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.o"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.i"
+	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

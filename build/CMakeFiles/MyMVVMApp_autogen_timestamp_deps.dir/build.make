@@ -67,8 +67,8 @@ include CMakeFiles/MyMVVMApp_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/MyMVVMApp_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/MyMVVMApp_autogen_timestamp_deps: /home/ub24/software/Qt/6.10.1/gcc_64/libexec/moc
-CMakeFiles/MyMVVMApp_autogen_timestamp_deps: /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Quick.so.6.10.1
 CMakeFiles/MyMVVMApp_autogen_timestamp_deps: /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Svg.so.6.10.1
+CMakeFiles/MyMVVMApp_autogen_timestamp_deps: /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Quick.so.6.10.1
 
 MyMVVMApp_autogen_timestamp_deps: CMakeFiles/MyMVVMApp_autogen_timestamp_deps
 MyMVVMApp_autogen_timestamp_deps: CMakeFiles/MyMVVMApp_autogen_timestamp_deps.dir/build.make

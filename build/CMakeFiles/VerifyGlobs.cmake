@@ -6,8 +6,16 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false RELATIVE "/home/ub24/project/yutian" "/home/ub24/project/yutian/src/View/*.qml")
 set(OLD_GLOB
   "src/View/MainWin.qml"
+  "src/View/RightContent/Favorites.qml"
+  "src/View/RightContent/Ranking.qml"
+  "src/View/RightContent/SearchPage.qml"
+  "src/View/RightContent/Settings.qml"
+  "src/View/RightContent/SongList.qml"
+  "src/View/RightContent/searchpage/Song.qml"
+  "src/View/RightContent/searchpage/SongList.qml"
   "src/View/SearchBox.qml"
   "src/View/SideBar.qml"
+  "src/View/common/Theme.qml"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

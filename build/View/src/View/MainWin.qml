@@ -1,6 +1,8 @@
 // View/MainWin.qml
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts 2.15
+import "./RightContent"
 
 ApplicationWindow {
     width: 1350
@@ -8,31 +10,38 @@ ApplicationWindow {
     visible: true
     title: "MVVM Example"
 
-    Row{
+    property var pages: [
+        "./RightContent/SearchPage.qml", 
+        "./RightContent/SongList.qml", 
+        "./RightContent/Ranking.qml", 
+        "./RightContent/Favorites.qml", 
+        "./RightContent/Settings.qml"]
+
+    RowLayout{
         anchors.fill: parent
+
         SideBar {
             id: sidebar
-            width: 157
-            height: 840
-            anchors.left: parent.left
-            anchors.top: parent.top
-            anchors.bottom: parent.bottom
+
+            Layout.alignment: Qt.AlignTop
         }
 
-        Column{
-            anchors.left: sidebar.right
-            anchors.top: parent.top
+        ColumnLayout {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            spacing: 10
+
             SearchBox {
                 id: searchBox
-                width: 480
-                height: 40
             }
+
+            // SearchPage{
+            // }
             Loader{
                 id: contentLoader
-                width: 1193
-                height: 760
-                sourceComponent: Rectangle{
-                    color: "#FFFFFF"}
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                source: pages[sidebar.selectedIndex]
             }
         }
     }

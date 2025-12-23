@@ -6,52 +6,36 @@
                 {
                     "entries": [
                         {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 219,
+                            "functionName": "pages",
+                            "line": 13,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 675,
+                            "durationMicroseconds": 45,
                             "functionName": "fill",
-                            "line": 12,
+                            "line": 21,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 177,
-                            "functionName": "left",
-                            "line": 17,
+                            "column": 31,
+                            "durationMicroseconds": 61,
+                            "functionName": "alignment",
+                            "line": 26,
                             "message": ""
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 26,
-                            "durationMicroseconds": 70,
-                            "functionName": "top",
-                            "line": 18,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 29,
-                            "durationMicroseconds": 115,
-                            "functionName": "bottom",
-                            "line": 19,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 84,
-                            "functionName": "left",
-                            "line": 23,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 26,
-                            "durationMicroseconds": 191,
-                            "functionName": "top",
-                            "line": 24,
-                            "message": ""
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 45,
+                            "functionName": "source",
+                            "line": 44,
+                            "message": "Cannot access value for name pages"
                         }
                     ],
                     "filePath": "/home/ub24/project/yutian/src/View/MainWin.qml"

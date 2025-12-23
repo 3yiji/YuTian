@@ -1,0 +1,15 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                    ],
+                    "filePath": "/home/ub24/project/yutian/src/View/RightContent/searchpage/Song.qml"
+                }
+            ],
+            "moduleId": "View(MyMVVMApp)"
+        }
+    ]
+}
