@@ -11,7 +11,7 @@ ApplicationWindow {
     title: "MVVM Example"
 
     property var pages: [
-        "./RightContent/SearchPage.qml", 
+        "./RightContent/SearchPage/SearchPage.qml", 
         "./RightContent/SongList.qml", 
         "./RightContent/Ranking.qml", 
         "./RightContent/Favorites.qml", 

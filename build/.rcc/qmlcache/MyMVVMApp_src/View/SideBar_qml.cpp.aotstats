@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 33,
-                            "durationMicroseconds": 162,
+                            "durationMicroseconds": 175,
                             "functionName": "repeaterModel",
                             "line": 37,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 51,
+                            "durationMicroseconds": 52,
                             "functionName": "preferredHeight",
                             "line": 12,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 34,
+                            "durationMicroseconds": 32,
                             "functionName": "width",
                             "line": 47,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 34,
-                            "durationMicroseconds": 38,
+                            "durationMicroseconds": 37,
                             "functionName": "horizontalAlignment",
                             "line": 58,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 25,
+                            "durationMicroseconds": 24,
                             "functionName": "verticalAlignment",
                             "line": 59,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 37,
-                            "durationMicroseconds": 21,
+                            "durationMicroseconds": 28,
                             "functionName": "preferredHeight",
                             "line": 63,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 16,
+                            "durationMicroseconds": 23,
                             "functionName": "model",
                             "line": 68,
                             "message": "Cannot access value for name repeaterModel"
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 43,
+                            "durationMicroseconds": 95,
                             "functionName": "color",
                             "line": 80,
                             "message": "Cannot access value for name selectedIndex"
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 41,
-                            "durationMicroseconds": 21,
+                            "durationMicroseconds": 33,
                             "functionName": "preferredHeight",
                             "line": 76,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 2,
                             "column": 29,
-                            "durationMicroseconds": 116,
+                            "durationMicroseconds": 138,
                             "functionName": "source",
                             "line": 90,
                             "message": "Cannot access value for name modelData"
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 32,
+                            "durationMicroseconds": 43,
                             "functionName": "fillMode",
                             "line": 91,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 87,
+                            "durationMicroseconds": 121,
                             "functionName": "width",
                             "line": 95,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 52,
+                            "durationMicroseconds": 57,
                             "functionName": "height",
                             "line": 96,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 40,
-                            "durationMicroseconds": 39,
+                            "durationMicroseconds": 37,
                             "functionName": "height",
                             "line": 93,
                             "message": ""
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 52,
+                            "durationMicroseconds": 50,
                             "functionName": "onEntered",
                             "line": 102,
                             "message": ""
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 41,
+                            "durationMicroseconds": 39,
                             "functionName": "onExited",
                             "line": 103,
                             "message": ""
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 101,
                             "functionName": "onClicked",
                             "line": 104,
                             "message": "Cannot access value for name index"
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 31,
+                            "durationMicroseconds": 49,
                             "functionName": "height",
                             "line": 106,
                             "message": ""
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 29,
+                            "durationMicroseconds": 32,
                             "functionName": "width",
                             "line": 107,
                             "message": ""

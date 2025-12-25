@@ -1,14 +1,15 @@
 module View
-typeinfo MyMVVMApp.qmltypes
+typeinfo YuTian.qmltypes
 prefer :/View/
 MainWin 1.0 src/View/MainWin.qml
 Favorites 1.0 src/View/RightContent/Favorites.qml
 Ranking 1.0 src/View/RightContent/Ranking.qml
-SearchPage 1.0 src/View/RightContent/SearchPage.qml
+SearchPage 1.0 src/View/RightContent/SearchPage/SearchPage.qml
+Song 1.0 src/View/RightContent/SearchPage/Song.qml
+SongList 1.0 src/View/RightContent/SearchPage/SongList.qml
+SourceList 1.0 src/View/RightContent/SearchPage/SourceList.qml
 Settings 1.0 src/View/RightContent/Settings.qml
 SongList 1.0 src/View/RightContent/SongList.qml
-Song 1.0 src/View/RightContent/searchpage/Song.qml
-SongList 1.0 src/View/RightContent/searchpage/SongList.qml
 SearchBox 1.0 src/View/SearchBox.qml
 SideBar 1.0 src/View/SideBar.qml
 singleton Theme 1.0 src/View/common/Theme.qml

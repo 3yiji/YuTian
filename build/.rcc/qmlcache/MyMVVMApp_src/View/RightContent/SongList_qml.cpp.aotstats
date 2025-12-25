@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 94,
+                            "durationMicroseconds": 98,
                             "functionName": "centerIn",
                             "line": 9,
                             "message": ""

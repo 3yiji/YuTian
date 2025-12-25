@@ -26,7 +26,28 @@ namespace _0x5f_View_src_View_RightContent_Ranking_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_View_src_View_RightContent_SearchPage_qml { 
+namespace _0x5f_View_src_View_RightContent_SearchPage_SearchPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_View_src_View_RightContent_SearchPage_Song_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_View_src_View_RightContent_SearchPage_SongList_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_View_src_View_RightContent_SearchPage_SourceList_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -41,20 +62,6 @@ namespace _0x5f_View_src_View_RightContent_Settings_qml {
     };
 }
 namespace _0x5f_View_src_View_RightContent_SongList_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _0x5f_View_src_View_RightContent_searchpage_Song_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _0x5f_View_src_View_RightContent_searchpage_SongList_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -99,11 +106,12 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/MainWin.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_MainWin_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/Favorites.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_Favorites_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/Ranking.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_Ranking_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/SearchPage.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_SearchPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/SearchPage/SearchPage.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_SearchPage_SearchPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/SearchPage/Song.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_SearchPage_Song_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/SearchPage/SongList.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_SearchPage_SongList_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/SearchPage/SourceList.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_SearchPage_SourceList_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/Settings.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_Settings_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/SongList.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_SongList_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/searchpage/Song.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_searchpage_Song_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/RightContent/searchpage/SongList.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_RightContent_searchpage_SongList_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/SearchBox.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_SearchBox_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/SideBar.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_SideBar_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/View/src/View/common/Theme.qml"), &QmlCacheGeneratedCode::_0x5f_View_src_View_common_Theme_qml::unit);

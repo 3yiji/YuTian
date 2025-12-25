@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/ub24/project/yutian/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -118,30 +128,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp
+# Target rules for targets named YuTianCore
 
 # Build rule for target.
-MyMVVMApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp
-.PHONY : MyMVVMApp
+YuTianCore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTianCore
+.PHONY : YuTianCore
 
 # fast build rule for target.
-MyMVVMApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build
-.PHONY : MyMVVMApp/fast
+YuTianCore/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/build
+.PHONY : YuTianCore/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_qmltyperegistration
+# Target rules for targets named YuTian
 
 # Build rule for target.
-MyMVVMApp_qmltyperegistration: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_qmltyperegistration
-.PHONY : MyMVVMApp_qmltyperegistration
+YuTian: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian
+.PHONY : YuTian
 
 # fast build rule for target.
-MyMVVMApp_qmltyperegistration/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_qmltyperegistration.dir/build.make CMakeFiles/MyMVVMApp_qmltyperegistration.dir/build
-.PHONY : MyMVVMApp_qmltyperegistration/fast
+YuTian/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build
+.PHONY : YuTian/fast
+
+#=============================================================================
+# Target rules for targets named YuTian_qmltyperegistration
+
+# Build rule for target.
+YuTian_qmltyperegistration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_qmltyperegistration
+.PHONY : YuTian_qmltyperegistration
+
+# fast build rule for target.
+YuTian_qmltyperegistration/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_qmltyperegistration.dir/build.make CMakeFiles/YuTian_qmltyperegistration.dir/build
+.PHONY : YuTian_qmltyperegistration/fast
 
 #=============================================================================
 # Target rules for targets named all_qmltyperegistrations
@@ -157,43 +180,43 @@ all_qmltyperegistrations/fast:
 .PHONY : all_qmltyperegistrations/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_qmllint
+# Target rules for targets named YuTian_qmllint
 
 # Build rule for target.
-MyMVVMApp_qmllint: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_qmllint
-.PHONY : MyMVVMApp_qmllint
+YuTian_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_qmllint
+.PHONY : YuTian_qmllint
 
 # fast build rule for target.
-MyMVVMApp_qmllint/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_qmllint.dir/build.make CMakeFiles/MyMVVMApp_qmllint.dir/build
-.PHONY : MyMVVMApp_qmllint/fast
+YuTian_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_qmllint.dir/build.make CMakeFiles/YuTian_qmllint.dir/build
+.PHONY : YuTian_qmllint/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_qmllint_json
+# Target rules for targets named YuTian_qmllint_json
 
 # Build rule for target.
-MyMVVMApp_qmllint_json: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_qmllint_json
-.PHONY : MyMVVMApp_qmllint_json
+YuTian_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_qmllint_json
+.PHONY : YuTian_qmllint_json
 
 # fast build rule for target.
-MyMVVMApp_qmllint_json/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_qmllint_json.dir/build.make CMakeFiles/MyMVVMApp_qmllint_json.dir/build
-.PHONY : MyMVVMApp_qmllint_json/fast
+YuTian_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_qmllint_json.dir/build.make CMakeFiles/YuTian_qmllint_json.dir/build
+.PHONY : YuTian_qmllint_json/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_qmllint_module
+# Target rules for targets named YuTian_qmllint_module
 
 # Build rule for target.
-MyMVVMApp_qmllint_module: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_qmllint_module
-.PHONY : MyMVVMApp_qmllint_module
+YuTian_qmllint_module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_qmllint_module
+.PHONY : YuTian_qmllint_module
 
 # fast build rule for target.
-MyMVVMApp_qmllint_module/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_qmllint_module.dir/build.make CMakeFiles/MyMVVMApp_qmllint_module.dir/build
-.PHONY : MyMVVMApp_qmllint_module/fast
+YuTian_qmllint_module/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_qmllint_module.dir/build.make CMakeFiles/YuTian_qmllint_module.dir/build
+.PHONY : YuTian_qmllint_module/fast
 
 #=============================================================================
 # Target rules for targets named all_qmllint
@@ -235,30 +258,43 @@ all_qmllint_module/fast:
 .PHONY : all_qmllint_module/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_copy_qml
+# Target rules for targets named YuTian_copy_qml
 
 # Build rule for target.
-MyMVVMApp_copy_qml: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_copy_qml
-.PHONY : MyMVVMApp_copy_qml
+YuTian_copy_qml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_copy_qml
+.PHONY : YuTian_copy_qml
 
 # fast build rule for target.
-MyMVVMApp_copy_qml/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_copy_qml.dir/build.make CMakeFiles/MyMVVMApp_copy_qml.dir/build
-.PHONY : MyMVVMApp_copy_qml/fast
+YuTian_copy_qml/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_copy_qml.dir/build.make CMakeFiles/YuTian_copy_qml.dir/build
+.PHONY : YuTian_copy_qml/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_copy_res
+# Target rules for targets named YuTian_copy_res
 
 # Build rule for target.
-MyMVVMApp_copy_res: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_copy_res
-.PHONY : MyMVVMApp_copy_res
+YuTian_copy_res: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_copy_res
+.PHONY : YuTian_copy_res
 
 # fast build rule for target.
-MyMVVMApp_copy_res/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_copy_res.dir/build.make CMakeFiles/MyMVVMApp_copy_res.dir/build
-.PHONY : MyMVVMApp_copy_res/fast
+YuTian_copy_res/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_copy_res.dir/build.make CMakeFiles/YuTian_copy_res.dir/build
+.PHONY : YuTian_copy_res/fast
+
+#=============================================================================
+# Target rules for targets named test1
+
+# Build rule for target.
+test1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1
+.PHONY : test1
+
+# fast build rule for target.
+test1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
+.PHONY : test1/fast
 
 #=============================================================================
 # Target rules for targets named generate_qmlls_build_ini_file
@@ -274,17 +310,17 @@ generate_qmlls_build_ini_file/fast:
 .PHONY : generate_qmlls_build_ini_file/fast
 
 #=============================================================================
-# Target rules for targets named module_MyMVVMApp_aotstats_target
+# Target rules for targets named module_YuTian_aotstats_target
 
 # Build rule for target.
-module_MyMVVMApp_aotstats_target: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_MyMVVMApp_aotstats_target
-.PHONY : module_MyMVVMApp_aotstats_target
+module_YuTian_aotstats_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_YuTian_aotstats_target
+.PHONY : module_YuTian_aotstats_target
 
 # fast build rule for target.
-module_MyMVVMApp_aotstats_target/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_MyMVVMApp_aotstats_target.dir/build.make CMakeFiles/module_MyMVVMApp_aotstats_target.dir/build
-.PHONY : module_MyMVVMApp_aotstats_target/fast
+module_YuTian_aotstats_target/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_YuTian_aotstats_target.dir/build.make CMakeFiles/module_YuTian_aotstats_target.dir/build
+.PHONY : module_YuTian_aotstats_target/fast
 
 #=============================================================================
 # Target rules for targets named all_aotstats
@@ -300,146 +336,222 @@ all_aotstats/fast:
 .PHONY : all_aotstats/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_qmlimportscan
+# Target rules for targets named YuTian_qmlimportscan
 
 # Build rule for target.
-MyMVVMApp_qmlimportscan: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_qmlimportscan
-.PHONY : MyMVVMApp_qmlimportscan
+YuTian_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_qmlimportscan
+.PHONY : YuTian_qmlimportscan
 
 # fast build rule for target.
-MyMVVMApp_qmlimportscan/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_qmlimportscan.dir/build.make CMakeFiles/MyMVVMApp_qmlimportscan.dir/build
-.PHONY : MyMVVMApp_qmlimportscan/fast
+YuTian_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_qmlimportscan.dir/build.make CMakeFiles/YuTian_qmlimportscan.dir/build
+.PHONY : YuTian_qmlimportscan/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_autogen_timestamp_deps
+# Target rules for targets named YuTianCore_autogen_timestamp_deps
 
 # Build rule for target.
-MyMVVMApp_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_autogen_timestamp_deps
-.PHONY : MyMVVMApp_autogen_timestamp_deps
+YuTianCore_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTianCore_autogen_timestamp_deps
+.PHONY : YuTianCore_autogen_timestamp_deps
 
 # fast build rule for target.
-MyMVVMApp_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_autogen_timestamp_deps.dir/build.make CMakeFiles/MyMVVMApp_autogen_timestamp_deps.dir/build
-.PHONY : MyMVVMApp_autogen_timestamp_deps/fast
+YuTianCore_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore_autogen_timestamp_deps.dir/build.make CMakeFiles/YuTianCore_autogen_timestamp_deps.dir/build
+.PHONY : YuTianCore_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named MyMVVMApp_autogen
+# Target rules for targets named YuTianCore_autogen
 
 # Build rule for target.
-MyMVVMApp_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyMVVMApp_autogen
-.PHONY : MyMVVMApp_autogen
+YuTianCore_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTianCore_autogen
+.PHONY : YuTianCore_autogen
 
 # fast build rule for target.
-MyMVVMApp_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp_autogen.dir/build.make CMakeFiles/MyMVVMApp_autogen.dir/build
-.PHONY : MyMVVMApp_autogen/fast
+YuTianCore_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore_autogen.dir/build.make CMakeFiles/YuTianCore_autogen.dir/build
+.PHONY : YuTianCore_autogen/fast
 
-MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.o: MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o
-.PHONY : MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.o
+#=============================================================================
+# Target rules for targets named YuTian_autogen_timestamp_deps
 
-# target to build an object file
-MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o
-.PHONY : MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o
+# Build rule for target.
+YuTian_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_autogen_timestamp_deps
+.PHONY : YuTian_autogen_timestamp_deps
 
-MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.i: MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i
-.PHONY : MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.i
+# fast build rule for target.
+YuTian_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_autogen_timestamp_deps.dir/build.make CMakeFiles/YuTian_autogen_timestamp_deps.dir/build
+.PHONY : YuTian_autogen_timestamp_deps/fast
 
-# target to preprocess a source file
-MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i
-.PHONY : MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i
+#=============================================================================
+# Target rules for targets named YuTian_autogen
 
-MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.s: MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s
-.PHONY : MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.s
+# Build rule for target.
+YuTian_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YuTian_autogen
+.PHONY : YuTian_autogen
 
-# target to generate assembly for a file
-MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s
-.PHONY : MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s
+# fast build rule for target.
+YuTian_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian_autogen.dir/build.make CMakeFiles/YuTian_autogen.dir/build
+.PHONY : YuTian_autogen/fast
 
-MyMVVMApp_autogen/mocs_compilation.o: MyMVVMApp_autogen/mocs_compilation.cpp.o
-.PHONY : MyMVVMApp_autogen/mocs_compilation.o
+#=============================================================================
+# Target rules for targets named test1_autogen_timestamp_deps
 
-# target to build an object file
-MyMVVMApp_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.o
-.PHONY : MyMVVMApp_autogen/mocs_compilation.cpp.o
+# Build rule for target.
+test1_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1_autogen_timestamp_deps
+.PHONY : test1_autogen_timestamp_deps
 
-MyMVVMApp_autogen/mocs_compilation.i: MyMVVMApp_autogen/mocs_compilation.cpp.i
-.PHONY : MyMVVMApp_autogen/mocs_compilation.i
+# fast build rule for target.
+test1_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1_autogen_timestamp_deps.dir/build.make CMakeFiles/test1_autogen_timestamp_deps.dir/build
+.PHONY : test1_autogen_timestamp_deps/fast
 
-# target to preprocess a source file
-MyMVVMApp_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.i
-.PHONY : MyMVVMApp_autogen/mocs_compilation.cpp.i
+#=============================================================================
+# Target rules for targets named test1_autogen
 
-MyMVVMApp_autogen/mocs_compilation.s: MyMVVMApp_autogen/mocs_compilation.cpp.s
-.PHONY : MyMVVMApp_autogen/mocs_compilation.s
+# Build rule for target.
+test1_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1_autogen
+.PHONY : test1_autogen
 
-# target to generate assembly for a file
-MyMVVMApp_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/MyMVVMApp_autogen/mocs_compilation.cpp.s
-.PHONY : MyMVVMApp_autogen/mocs_compilation.cpp.s
+# fast build rule for target.
+test1_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1_autogen.dir/build.make CMakeFiles/test1_autogen.dir/build
+.PHONY : test1_autogen/fast
 
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.o: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.o
-
-# target to build an object file
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.o
-
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.i: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.i
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.i
-
-# target to preprocess a source file
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.i
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.i
-
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.s: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.s
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.s
-
-# target to generate assembly for a file
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.s
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.cpp.s
-
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.o: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.o
+YuTianCore_autogen/mocs_compilation.o: YuTianCore_autogen/mocs_compilation.cpp.o
+.PHONY : YuTianCore_autogen/mocs_compilation.o
 
 # target to build an object file
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.o
+YuTianCore_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/YuTianCore_autogen/mocs_compilation.cpp.o
+.PHONY : YuTianCore_autogen/mocs_compilation.cpp.o
 
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.i: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.i
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.i
+YuTianCore_autogen/mocs_compilation.i: YuTianCore_autogen/mocs_compilation.cpp.i
+.PHONY : YuTianCore_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.i
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.i
+YuTianCore_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/YuTianCore_autogen/mocs_compilation.cpp.i
+.PHONY : YuTianCore_autogen/mocs_compilation.cpp.i
 
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.s: build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.s
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.s
+YuTianCore_autogen/mocs_compilation.s: YuTianCore_autogen/mocs_compilation.cpp.s
+.PHONY : YuTianCore_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.s
-.PHONY : build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.cpp.s
+YuTianCore_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/YuTianCore_autogen/mocs_compilation.cpp.s
+.PHONY : YuTianCore_autogen/mocs_compilation.cpp.s
+
+YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.o: YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o
+.PHONY : YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.o
+
+# target to build an object file
+YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o
+.PHONY : YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.o
+
+YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.i: YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i
+.PHONY : YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.i
+
+# target to preprocess a source file
+YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i
+.PHONY : YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.i
+
+YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.s: YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s
+.PHONY : YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.s
+
+# target to generate assembly for a file
+YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s
+.PHONY : YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.cpp.s
+
+YuTian_autogen/mocs_compilation.o: YuTian_autogen/mocs_compilation.cpp.o
+.PHONY : YuTian_autogen/mocs_compilation.o
+
+# target to build an object file
+YuTian_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/YuTian_autogen/mocs_compilation.cpp.o
+.PHONY : YuTian_autogen/mocs_compilation.cpp.o
+
+YuTian_autogen/mocs_compilation.i: YuTian_autogen/mocs_compilation.cpp.i
+.PHONY : YuTian_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+YuTian_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/YuTian_autogen/mocs_compilation.cpp.i
+.PHONY : YuTian_autogen/mocs_compilation.cpp.i
+
+YuTian_autogen/mocs_compilation.s: YuTian_autogen/mocs_compilation.cpp.s
+.PHONY : YuTian_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+YuTian_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/YuTian_autogen/mocs_compilation.cpp.s
+.PHONY : YuTian_autogen/mocs_compilation.cpp.s
+
+build/.qt/rcc/qrc_YuTian_raw_qml_0.o: build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.o
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0.o
+
+# target to build an object file
+build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.o
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.o
+
+build/.qt/rcc/qrc_YuTian_raw_qml_0.i: build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.i
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0.i
+
+# target to preprocess a source file
+build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.i
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.i
+
+build/.qt/rcc/qrc_YuTian_raw_qml_0.s: build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.s
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0.s
+
+# target to generate assembly for a file
+build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.s
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0.cpp.s
+
+build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.o: build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.o
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.o
+
+# target to build an object file
+build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.o
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.o
+
+build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.i: build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.i
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.i
+
+# target to preprocess a source file
+build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.i
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.i
+
+build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.s: build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.s
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.s
+
+# target to generate assembly for a file
+build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.s
+.PHONY : build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.cpp.s
 
 build/.qt/rcc/qrc_qmake_View.o: build/.qt/rcc/qrc_qmake_View.cpp.o
 .PHONY : build/.qt/rcc/qrc_qmake_View.o
 
 # target to build an object file
 build/.qt/rcc/qrc_qmake_View.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_qmake_View.cpp.o
 .PHONY : build/.qt/rcc/qrc_qmake_View.cpp.o
 
 build/.qt/rcc/qrc_qmake_View.i: build/.qt/rcc/qrc_qmake_View.cpp.i
@@ -447,7 +559,7 @@ build/.qt/rcc/qrc_qmake_View.i: build/.qt/rcc/qrc_qmake_View.cpp.i
 
 # target to preprocess a source file
 build/.qt/rcc/qrc_qmake_View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_qmake_View.cpp.i
 .PHONY : build/.qt/rcc/qrc_qmake_View.cpp.i
 
 build/.qt/rcc/qrc_qmake_View.s: build/.qt/rcc/qrc_qmake_View.cpp.s
@@ -455,7 +567,7 @@ build/.qt/rcc/qrc_qmake_View.s: build/.qt/rcc/qrc_qmake_View.cpp.s
 
 # target to generate assembly for a file
 build/.qt/rcc/qrc_qmake_View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qmake_View.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_qmake_View.cpp.s
 .PHONY : build/.qt/rcc/qrc_qmake_View.cpp.s
 
 build/.qt/rcc/qrc_qml_resources.o: build/.qt/rcc/qrc_qml_resources.cpp.o
@@ -463,7 +575,7 @@ build/.qt/rcc/qrc_qml_resources.o: build/.qt/rcc/qrc_qml_resources.cpp.o
 
 # target to build an object file
 build/.qt/rcc/qrc_qml_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_qml_resources.cpp.o
 .PHONY : build/.qt/rcc/qrc_qml_resources.cpp.o
 
 build/.qt/rcc/qrc_qml_resources.i: build/.qt/rcc/qrc_qml_resources.cpp.i
@@ -471,7 +583,7 @@ build/.qt/rcc/qrc_qml_resources.i: build/.qt/rcc/qrc_qml_resources.cpp.i
 
 # target to preprocess a source file
 build/.qt/rcc/qrc_qml_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_qml_resources.cpp.i
 .PHONY : build/.qt/rcc/qrc_qml_resources.cpp.i
 
 build/.qt/rcc/qrc_qml_resources.s: build/.qt/rcc/qrc_qml_resources.cpp.s
@@ -479,303 +591,327 @@ build/.qt/rcc/qrc_qml_resources.s: build/.qt/rcc/qrc_qml_resources.cpp.s
 
 # target to generate assembly for a file
 build/.qt/rcc/qrc_qml_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.qt/rcc/qrc_qml_resources.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.qt/rcc/qrc_qml_resources.cpp.s
 .PHONY : build/.qt/rcc/qrc_qml_resources.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.o: build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.o
+build/.rcc/qmlcache/YuTian_qmlcache_loader.o: build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_qmlcache_loader.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.o
+build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.i: build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.i
+build/.rcc/qmlcache/YuTian_qmlcache_loader.i: build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_qmlcache_loader.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.i
+build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.s: build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.s
+build/.rcc/qmlcache/YuTian_qmlcache_loader.s: build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_qmlcache_loader.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.cpp.s
+build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_qmlcache_loader.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o
+build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.o: build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i
+build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.i: build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s
+build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.s: build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.o: build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.i: build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.s: build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o
+build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.o: build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i
+build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.i: build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s
+build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.s: build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.cpp.s
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.o: build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.o
+build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.o: build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.o
 
 # target to build an object file
-build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.o
+build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.o
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.i: build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.i
+build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.i: build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.i
 
 # target to preprocess a source file
-build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.i
+build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.i
 
-build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.s: build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.s
+build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.s: build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.s
 
 # target to generate assembly for a file
-build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
-.PHONY : build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.cpp.s
+build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.cpp.s
+
+build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.o: build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.o
+
+build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.i: build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.i
+
+build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.s: build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -783,7 +919,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -791,39 +927,39 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mymvvmapp_qmltyperegistrations.o: mymvvmapp_qmltyperegistrations.cpp.o
-.PHONY : mymvvmapp_qmltyperegistrations.o
+src/Model/search_source/KuGouSearch.o: src/Model/search_source/KuGouSearch.cpp.o
+.PHONY : src/Model/search_source/KuGouSearch.o
 
 # target to build an object file
-mymvvmapp_qmltyperegistrations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.o
-.PHONY : mymvvmapp_qmltyperegistrations.cpp.o
+src/Model/search_source/KuGouSearch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/Model/search_source/KuGouSearch.cpp.o
+.PHONY : src/Model/search_source/KuGouSearch.cpp.o
 
-mymvvmapp_qmltyperegistrations.i: mymvvmapp_qmltyperegistrations.cpp.i
-.PHONY : mymvvmapp_qmltyperegistrations.i
+src/Model/search_source/KuGouSearch.i: src/Model/search_source/KuGouSearch.cpp.i
+.PHONY : src/Model/search_source/KuGouSearch.i
 
 # target to preprocess a source file
-mymvvmapp_qmltyperegistrations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.i
-.PHONY : mymvvmapp_qmltyperegistrations.cpp.i
+src/Model/search_source/KuGouSearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/Model/search_source/KuGouSearch.cpp.i
+.PHONY : src/Model/search_source/KuGouSearch.cpp.i
 
-mymvvmapp_qmltyperegistrations.s: mymvvmapp_qmltyperegistrations.cpp.s
-.PHONY : mymvvmapp_qmltyperegistrations.s
+src/Model/search_source/KuGouSearch.s: src/Model/search_source/KuGouSearch.cpp.s
+.PHONY : src/Model/search_source/KuGouSearch.s
 
 # target to generate assembly for a file
-mymvvmapp_qmltyperegistrations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/mymvvmapp_qmltyperegistrations.cpp.s
-.PHONY : mymvvmapp_qmltyperegistrations.cpp.s
+src/Model/search_source/KuGouSearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/Model/search_source/KuGouSearch.cpp.s
+.PHONY : src/Model/search_source/KuGouSearch.cpp.s
 
 src/ViewModel/MainWin.o: src/ViewModel/MainWin.cpp.o
 .PHONY : src/ViewModel/MainWin.o
 
 # target to build an object file
 src/ViewModel/MainWin.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/MainWin.cpp.o
 .PHONY : src/ViewModel/MainWin.cpp.o
 
 src/ViewModel/MainWin.i: src/ViewModel/MainWin.cpp.i
@@ -831,7 +967,7 @@ src/ViewModel/MainWin.i: src/ViewModel/MainWin.cpp.i
 
 # target to preprocess a source file
 src/ViewModel/MainWin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/MainWin.cpp.i
 .PHONY : src/ViewModel/MainWin.cpp.i
 
 src/ViewModel/MainWin.s: src/ViewModel/MainWin.cpp.s
@@ -839,7 +975,7 @@ src/ViewModel/MainWin.s: src/ViewModel/MainWin.cpp.s
 
 # target to generate assembly for a file
 src/ViewModel/MainWin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/MainWin.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/MainWin.cpp.s
 .PHONY : src/ViewModel/MainWin.cpp.s
 
 src/ViewModel/SideBar.o: src/ViewModel/SideBar.cpp.o
@@ -847,7 +983,7 @@ src/ViewModel/SideBar.o: src/ViewModel/SideBar.cpp.o
 
 # target to build an object file
 src/ViewModel/SideBar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/SideBar.cpp.o
 .PHONY : src/ViewModel/SideBar.cpp.o
 
 src/ViewModel/SideBar.i: src/ViewModel/SideBar.cpp.i
@@ -855,7 +991,7 @@ src/ViewModel/SideBar.i: src/ViewModel/SideBar.cpp.i
 
 # target to preprocess a source file
 src/ViewModel/SideBar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/SideBar.cpp.i
 .PHONY : src/ViewModel/SideBar.cpp.i
 
 src/ViewModel/SideBar.s: src/ViewModel/SideBar.cpp.s
@@ -863,39 +999,63 @@ src/ViewModel/SideBar.s: src/ViewModel/SideBar.cpp.s
 
 # target to generate assembly for a file
 src/ViewModel/SideBar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/SideBar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/SideBar.cpp.s
 .PHONY : src/ViewModel/SideBar.cpp.s
 
-src/ViewModel/app.o: src/ViewModel/app.cpp.o
-.PHONY : src/ViewModel/app.o
+src/ViewModel/SongResult.o: src/ViewModel/SongResult.cpp.o
+.PHONY : src/ViewModel/SongResult.o
 
 # target to build an object file
-src/ViewModel/app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.o
-.PHONY : src/ViewModel/app.cpp.o
+src/ViewModel/SongResult.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/SongResult.cpp.o
+.PHONY : src/ViewModel/SongResult.cpp.o
 
-src/ViewModel/app.i: src/ViewModel/app.cpp.i
-.PHONY : src/ViewModel/app.i
+src/ViewModel/SongResult.i: src/ViewModel/SongResult.cpp.i
+.PHONY : src/ViewModel/SongResult.i
 
 # target to preprocess a source file
-src/ViewModel/app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.i
-.PHONY : src/ViewModel/app.cpp.i
+src/ViewModel/SongResult.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/SongResult.cpp.i
+.PHONY : src/ViewModel/SongResult.cpp.i
 
-src/ViewModel/app.s: src/ViewModel/app.cpp.s
-.PHONY : src/ViewModel/app.s
+src/ViewModel/SongResult.s: src/ViewModel/SongResult.cpp.s
+.PHONY : src/ViewModel/SongResult.s
 
 # target to generate assembly for a file
-src/ViewModel/app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/src/ViewModel/app.cpp.s
-.PHONY : src/ViewModel/app.cpp.s
+src/ViewModel/SongResult.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTianCore.dir/build.make CMakeFiles/YuTianCore.dir/src/ViewModel/SongResult.cpp.s
+.PHONY : src/ViewModel/SongResult.cpp.s
+
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
+
+# target to build an object file
+src/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
+
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
+
+# target to preprocess a source file
+src/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
+
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
+
+# target to generate assembly for a file
+src/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
 
 temp/temp.o: temp/temp.cpp.o
 .PHONY : temp/temp.o
 
 # target to build an object file
 temp/temp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/temp/temp.cpp.o
 .PHONY : temp/temp.cpp.o
 
 temp/temp.i: temp/temp.cpp.i
@@ -903,7 +1063,7 @@ temp/temp.i: temp/temp.cpp.i
 
 # target to preprocess a source file
 temp/temp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/temp/temp.cpp.i
 .PHONY : temp/temp.cpp.i
 
 temp/temp.s: temp/temp.cpp.s
@@ -911,8 +1071,80 @@ temp/temp.s: temp/temp.cpp.s
 
 # target to generate assembly for a file
 temp/temp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMVVMApp.dir/build.make CMakeFiles/MyMVVMApp.dir/temp/temp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/temp/temp.cpp.s
 .PHONY : temp/temp.cpp.s
+
+test1_autogen/mocs_compilation.o: test1_autogen/mocs_compilation.cpp.o
+.PHONY : test1_autogen/mocs_compilation.o
+
+# target to build an object file
+test1_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test1_autogen/mocs_compilation.cpp.o
+.PHONY : test1_autogen/mocs_compilation.cpp.o
+
+test1_autogen/mocs_compilation.i: test1_autogen/mocs_compilation.cpp.i
+.PHONY : test1_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+test1_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test1_autogen/mocs_compilation.cpp.i
+.PHONY : test1_autogen/mocs_compilation.cpp.i
+
+test1_autogen/mocs_compilation.s: test1_autogen/mocs_compilation.cpp.s
+.PHONY : test1_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+test1_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test1_autogen/mocs_compilation.cpp.s
+.PHONY : test1_autogen/mocs_compilation.cpp.s
+
+tests/test.o: tests/test.cpp.o
+.PHONY : tests/test.o
+
+# target to build an object file
+tests/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/tests/test.cpp.o
+.PHONY : tests/test.cpp.o
+
+tests/test.i: tests/test.cpp.i
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
+
+yutian_qmltyperegistrations.o: yutian_qmltyperegistrations.cpp.o
+.PHONY : yutian_qmltyperegistrations.o
+
+# target to build an object file
+yutian_qmltyperegistrations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/yutian_qmltyperegistrations.cpp.o
+.PHONY : yutian_qmltyperegistrations.cpp.o
+
+yutian_qmltyperegistrations.i: yutian_qmltyperegistrations.cpp.i
+.PHONY : yutian_qmltyperegistrations.i
+
+# target to preprocess a source file
+yutian_qmltyperegistrations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/yutian_qmltyperegistrations.cpp.i
+.PHONY : yutian_qmltyperegistrations.cpp.i
+
+yutian_qmltyperegistrations.s: yutian_qmltyperegistrations.cpp.s
+.PHONY : yutian_qmltyperegistrations.s
+
+# target to generate assembly for a file
+yutian_qmltyperegistrations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YuTian.dir/build.make CMakeFiles/YuTian.dir/yutian_qmltyperegistrations.cpp.s
+.PHONY : yutian_qmltyperegistrations.cpp.s
 
 # Help Target
 help:
@@ -922,95 +1154,120 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyMVVMApp_autogen"
-	@echo "... MyMVVMApp_autogen_timestamp_deps"
-	@echo "... MyMVVMApp_copy_qml"
-	@echo "... MyMVVMApp_copy_res"
-	@echo "... MyMVVMApp_qmlimportscan"
-	@echo "... MyMVVMApp_qmllint"
-	@echo "... MyMVVMApp_qmllint_json"
-	@echo "... MyMVVMApp_qmllint_module"
-	@echo "... MyMVVMApp_qmltyperegistration"
+	@echo "... test"
+	@echo "... YuTianCore_autogen"
+	@echo "... YuTianCore_autogen_timestamp_deps"
+	@echo "... YuTian_autogen"
+	@echo "... YuTian_autogen_timestamp_deps"
+	@echo "... YuTian_copy_qml"
+	@echo "... YuTian_copy_res"
+	@echo "... YuTian_qmlimportscan"
+	@echo "... YuTian_qmllint"
+	@echo "... YuTian_qmllint_json"
+	@echo "... YuTian_qmllint_module"
+	@echo "... YuTian_qmltyperegistration"
 	@echo "... all_aotstats"
 	@echo "... all_qmllint"
 	@echo "... all_qmllint_json"
 	@echo "... all_qmllint_module"
 	@echo "... all_qmltyperegistrations"
 	@echo "... generate_qmlls_build_ini_file"
-	@echo "... module_MyMVVMApp_aotstats_target"
-	@echo "... MyMVVMApp"
-	@echo "... MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.o"
-	@echo "... MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.i"
-	@echo "... MyMVVMApp_autogen/S5YYZ2ZCNV/qrc_Resources.s"
-	@echo "... MyMVVMApp_autogen/mocs_compilation.o"
-	@echo "... MyMVVMApp_autogen/mocs_compilation.i"
-	@echo "... MyMVVMApp_autogen/mocs_compilation.s"
-	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.o"
-	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.i"
-	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0.s"
-	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.o"
-	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.i"
-	@echo "... build/.qt/rcc/qrc_MyMVVMApp_raw_qml_0_extra_qmldirs.s"
+	@echo "... module_YuTian_aotstats_target"
+	@echo "... test1_autogen"
+	@echo "... test1_autogen_timestamp_deps"
+	@echo "... YuTian"
+	@echo "... YuTianCore"
+	@echo "... test1"
+	@echo "... YuTianCore_autogen/mocs_compilation.o"
+	@echo "... YuTianCore_autogen/mocs_compilation.i"
+	@echo "... YuTianCore_autogen/mocs_compilation.s"
+	@echo "... YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.o"
+	@echo "... YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.i"
+	@echo "... YuTian_autogen/S5YYZ2ZCNV/qrc_Resources.s"
+	@echo "... YuTian_autogen/mocs_compilation.o"
+	@echo "... YuTian_autogen/mocs_compilation.i"
+	@echo "... YuTian_autogen/mocs_compilation.s"
+	@echo "... build/.qt/rcc/qrc_YuTian_raw_qml_0.o"
+	@echo "... build/.qt/rcc/qrc_YuTian_raw_qml_0.i"
+	@echo "... build/.qt/rcc/qrc_YuTian_raw_qml_0.s"
+	@echo "... build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.o"
+	@echo "... build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.i"
+	@echo "... build/.qt/rcc/qrc_YuTian_raw_qml_0_extra_qmldirs.s"
 	@echo "... build/.qt/rcc/qrc_qmake_View.o"
 	@echo "... build/.qt/rcc/qrc_qmake_View.i"
 	@echo "... build/.qt/rcc/qrc_qmake_View.s"
 	@echo "... build/.qt/rcc/qrc_qml_resources.o"
 	@echo "... build/.qt/rcc/qrc_qml_resources.i"
 	@echo "... build/.qt/rcc/qrc_qml_resources.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_qmlcache_loader.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/MainWin_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Favorites_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Ranking_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SearchPage_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/Settings_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/SongList_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/SongList_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/RightContent/searchpage/Song_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SearchBox_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/SideBar_qml.s"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.o"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.i"
-	@echo "... build/.rcc/qmlcache/MyMVVMApp_src/View/common/Theme_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_qmlcache_loader.o"
+	@echo "... build/.rcc/qmlcache/YuTian_qmlcache_loader.i"
+	@echo "... build/.rcc/qmlcache/YuTian_qmlcache_loader.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/MainWin_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Favorites_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Ranking_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SearchPage_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SongList_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/Song_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SearchPage/SourceList_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/Settings_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/RightContent/SongList_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/SearchBox_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/SideBar_qml.s"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.o"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.i"
+	@echo "... build/.rcc/qmlcache/YuTian_src/View/common/Theme_qml.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mymvvmapp_qmltyperegistrations.o"
-	@echo "... mymvvmapp_qmltyperegistrations.i"
-	@echo "... mymvvmapp_qmltyperegistrations.s"
+	@echo "... src/Model/search_source/KuGouSearch.o"
+	@echo "... src/Model/search_source/KuGouSearch.i"
+	@echo "... src/Model/search_source/KuGouSearch.s"
 	@echo "... src/ViewModel/MainWin.o"
 	@echo "... src/ViewModel/MainWin.i"
 	@echo "... src/ViewModel/MainWin.s"
 	@echo "... src/ViewModel/SideBar.o"
 	@echo "... src/ViewModel/SideBar.i"
 	@echo "... src/ViewModel/SideBar.s"
-	@echo "... src/ViewModel/app.o"
-	@echo "... src/ViewModel/app.i"
-	@echo "... src/ViewModel/app.s"
+	@echo "... src/ViewModel/SongResult.o"
+	@echo "... src/ViewModel/SongResult.i"
+	@echo "... src/ViewModel/SongResult.s"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
 	@echo "... temp/temp.o"
 	@echo "... temp/temp.i"
 	@echo "... temp/temp.s"
+	@echo "... test1_autogen/mocs_compilation.o"
+	@echo "... test1_autogen/mocs_compilation.i"
+	@echo "... test1_autogen/mocs_compilation.s"
+	@echo "... tests/test.o"
+	@echo "... tests/test.i"
+	@echo "... tests/test.s"
+	@echo "... yutian_qmltyperegistrations.o"
+	@echo "... yutian_qmltyperegistrations.i"
+	@echo "... yutian_qmltyperegistrations.s"
 .PHONY : help
 
 

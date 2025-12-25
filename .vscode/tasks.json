@@ -2,10 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "CMake configure (Debug)",
+            "type": "shell",
+            "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug"
+        },
+
+        {
             "label": "Qt build",
             "type": "shell",
-            "command": "cmake --build build --config Debug",
+            "command": "cmake --build build -j$(nproc)",
             "group": {
+
                 "kind": "build",
                 "isDefault": true
             },

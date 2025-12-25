@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 219,
+                            "durationMicroseconds": 177,
                             "functionName": "pages",
                             "line": 13,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 45,
+                            "durationMicroseconds": 41,
                             "functionName": "fill",
                             "line": 21,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 61,
+                            "durationMicroseconds": 41,
                             "functionName": "alignment",
                             "line": 26,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 45,
+                            "durationMicroseconds": 47,
                             "functionName": "source",
                             "line": 44,
                             "message": "Cannot access value for name pages"

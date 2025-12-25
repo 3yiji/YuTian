@@ -1,0 +1,23 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 357,
+                            "functionName": "onDarkModeChanged",
+                            "line": 30,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "/home/ub24/project/yutian/src/View/common/Theme.qml"
+                }
+            ],
+            "moduleId": "View(YuTian)"
+        }
+    ]
+}

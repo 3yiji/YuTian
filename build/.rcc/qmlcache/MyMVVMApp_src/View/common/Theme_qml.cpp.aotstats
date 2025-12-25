@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 316,
+                            "durationMicroseconds": 422,
                             "functionName": "onDarkModeChanged",
                             "line": 30,
                             "message": ""

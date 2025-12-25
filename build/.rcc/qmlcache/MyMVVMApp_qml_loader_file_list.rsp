@@ -9,11 +9,12 @@
 /View/src/View/MainWin.qml
 /View/src/View/RightContent/Favorites.qml
 /View/src/View/RightContent/Ranking.qml
-/View/src/View/RightContent/SearchPage.qml
+/View/src/View/RightContent/SearchPage/SearchPage.qml
+/View/src/View/RightContent/SearchPage/Song.qml
+/View/src/View/RightContent/SearchPage/SongList.qml
+/View/src/View/RightContent/SearchPage/SourceList.qml
 /View/src/View/RightContent/Settings.qml
 /View/src/View/RightContent/SongList.qml
-/View/src/View/RightContent/searchpage/Song.qml
-/View/src/View/RightContent/searchpage/SongList.qml
 /View/src/View/SearchBox.qml
 /View/src/View/SideBar.qml
 /View/src/View/common/Theme.qml

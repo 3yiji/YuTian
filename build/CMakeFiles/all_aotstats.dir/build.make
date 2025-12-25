@@ -69,7 +69,7 @@ include CMakeFiles/all_aotstats.dir/progress.make
 CMakeFiles/all_aotstats: .rcc/qmlcache/all_aotstats.txt
 	/usr/bin/cmake -E cat /home/ub24/project/yutian/build/.rcc/qmlcache/all_aotstats.txt
 
-.rcc/qmlcache/all_aotstats.aotstats: .rcc/qmlcache/module_MyMVVMApp.aotstats
+.rcc/qmlcache/all_aotstats.aotstats: .rcc/qmlcache/module_YuTian.aotstats
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ub24/project/yutian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/all_aotstats.aotstats, .rcc/qmlcache/all_aotstats.txt"
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlaotstats aggregate /home/ub24/project/yutian/build/.rcc/qmlcache/all_aotstats.aotstatslist /home/ub24/project/yutian/build/.rcc/qmlcache/all_aotstats.aotstats
 	/home/ub24/software/Qt/6.10.1/gcc_64/libexec/qmlaotstats format /home/ub24/project/yutian/build/.rcc/qmlcache/all_aotstats.aotstats /home/ub24/project/yutian/build/.rcc/qmlcache/all_aotstats.txt

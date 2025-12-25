@@ -1,2 +1,6 @@
-set(__QT_DEPLOY_TARGET_MyMVVMApp_FILE /home/ub24/project/yutian/build/MyMVVMApp)
-set(__QT_DEPLOY_TARGET_MyMVVMApp_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_YuTianCore_FILE /home/ub24/project/yutian/build/libYuTianCore.a)
+set(__QT_DEPLOY_TARGET_YuTianCore_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_YuTian_FILE /home/ub24/project/yutian/build/YuTian)
+set(__QT_DEPLOY_TARGET_YuTian_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_test1_FILE /home/ub24/project/yutian/build/test1)
+set(__QT_DEPLOY_TARGET_test1_TYPE EXECUTABLE)

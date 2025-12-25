@@ -1,0 +1,14 @@
+-I
+/home/ub24/project/yutian/build
+-I
+/home/ub24/software/Qt/6.10.1/gcc_64/qml
+--resource
+/home/ub24/project/yutian/build/.qt/rcc/qmake_View.qrc
+--resource
+/home/ub24/project/yutian/build/.qt/rcc/YuTian_raw_qml_0.qrc
+--resource
+/home/ub24/project/yutian/build/.qt/rcc/YuTian_raw_qml_0_extra_qmldirs.qrc
+--resource
+/home/ub24/project/yutian/build/.qt/rcc/qml_resources.qrc
+--module
+View

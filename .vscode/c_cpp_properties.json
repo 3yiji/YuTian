@@ -11,7 +11,9 @@
                 "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtGui",
                 "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtQml",
                 "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtQuick",
-                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtWidgets"
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtWidgets",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtNetwork",
+                "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtTest"
             ],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
