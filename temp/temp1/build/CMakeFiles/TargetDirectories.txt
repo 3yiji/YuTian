@@ -1,6 +1,0 @@
-/home/ub24/project/yutian/temp/temp1/build/CMakeFiles/temp1.dir
-/home/ub24/project/yutian/temp/temp1/build/CMakeFiles/temp1_qmlimportscan.dir
-/home/ub24/project/yutian/temp/temp1/build/CMakeFiles/edit_cache.dir
-/home/ub24/project/yutian/temp/temp1/build/CMakeFiles/rebuild_cache.dir
-/home/ub24/project/yutian/temp/temp1/build/CMakeFiles/temp1_autogen_timestamp_deps.dir
-/home/ub24/project/yutian/temp/temp1/build/CMakeFiles/temp1_autogen.dir

@@ -1,9 +1,0 @@
--rootPath
-/home/ub24/project/yutian/temp/temp1
--cmake-output
--output-file
-/home/ub24/project/yutian/temp/temp1/build/.qt/qml_imports/temp1_build.cmake
--importPath
-/home/ub24/project/yutian/temp/temp1/build
--importPath
-/home/ub24/software/Qt/6.10.1/gcc_64/qml

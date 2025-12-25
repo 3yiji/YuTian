@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="/View/">
-    <file alias="src/View/qmldir">/home/ub24/project/yutian/build/View/src/View/qmldir</file>
-    <file alias="src/View/RightContent/qmldir">/home/ub24/project/yutian/build/View/src/View/RightContent/qmldir</file>
-    <file alias="src/View/RightContent/SearchPage/qmldir">/home/ub24/project/yutian/build/View/src/View/RightContent/SearchPage/qmldir</file>
-    <file alias="src/View/common/qmldir">/home/ub24/project/yutian/build/View/src/View/common/qmldir</file>
-  </qresource>
-</RCC>
-

@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="Resources/Resources.qrc">/home/ub24/project/yutian/Resources/Resources.qrc</file>
-  </qresource>
-</RCC>
-

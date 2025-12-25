@@ -1,2 +1,0 @@
-/usr/bin/ar qc libYuTianCore.a CMakeFiles/YuTianCore.dir/YuTianCore_autogen/mocs_compilation.cpp.o CMakeFiles/YuTianCore.dir/src/ViewModel/MainWin.cpp.o CMakeFiles/YuTianCore.dir/src/ViewModel/SideBar.cpp.o CMakeFiles/YuTianCore.dir/src/ViewModel/SongResult.cpp.o CMakeFiles/YuTianCore.dir/src/Model/search_source/KuGouSearch.cpp.o
-/usr/bin/ranlib libYuTianCore.a

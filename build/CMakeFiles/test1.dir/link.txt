@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/test1.dir/test1_autogen/mocs_compilation.cpp.o CMakeFiles/test1.dir/tests/test.cpp.o -o test1  -Wl,-rpath,/home/ub24/software/Qt/6.10.1/gcc_64/lib libYuTianCore.a /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Test.so.6.10.1 /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Network.so.6.10.1 /home/ub24/software/Qt/6.10.1/gcc_64/lib/libQt6Core.so.6.10.1 

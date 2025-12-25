@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/View">/home/ub24/project/yutian/build/View</file>
-
-  </qresource>
-</RCC>
