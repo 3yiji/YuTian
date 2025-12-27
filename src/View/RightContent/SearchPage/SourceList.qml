@@ -9,6 +9,7 @@ Rectangle{
     Layout.preferredHeight: sourceLabels.height *1.2
     Layout.fillWidth: true
 
+    property SearchPageVM vm
     property int fontSize: 20
     property var sourceNames: [
         "小蜗音乐",

@@ -63,6 +63,7 @@ file(GLOB_RECURSE QML_FILES
 
 set(qml_singletons
     "${CMAKE_CURRENT_SOURCE_DIR}/src/View/common/Theme.qml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/View/common/EventBus.qml"
 )
 set_source_files_properties(${qml_singletons}       # 设置为单例
     PROPERTIES QT_QML_SINGLETON_TYPE TRUE)

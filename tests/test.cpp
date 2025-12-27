@@ -1,44 +1,22 @@
-// #include "KuGouSearch.h"
-
-// int main(int argc, char *argv[])
-// {
-//     KuGouSearch search;
-//     search.searchMusic("成都", 1, 20);
-
-//     return -1;
-// }
-
-
 #include <QCoreApplication>
 #include <QTimer>
 #include <QDebug>
+#include <QObject>
 
-#include "Model/search_source/KuGouSearch.h"
+#include "KuGouSearch.h"
+#include "SearchSong.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication app(argc, argv);
 
-    KuGouSearch search(nullptr); // 或者 KuGouSearch search; 都可以
+    SearchSong searchSong;
 
-    QObject::connect(&search, &KuGouSearch::searchFinished,
-                     [&](int total, const QList<SongInfo>& songs) {
-        qDebug() << "OK total =" << total << "got =" << songs.size();
-        QCoreApplication::quit();
+    QObject::connect(&searchSong, &SearchSong::songListReady,
+            [&](const int status, const QHash<QString, QList<SongInfo>> &sourceSongList){
+        qDebug() << "SearchSong got status =" << status;
     });
 
-    QObject::connect(&search, &KuGouSearch::searchError,
-                     [&](const QString& err) {
-        qDebug() << "ERR:2" << err;
-        QCoreApplication::quit();
-    });
-
-    // 超时退出，防止卡住
-    // QTimer::singleShot(10000, &app, []{
-    //     qDebug() << "TIMEOUT";
-    //     QCoreApplication::quit();
-    // });
-
-    search.searchMusic(QStringLiteral("成都"), 1, 20);
+    searchSong.getSongList("成都");
     return app.exec();
 }

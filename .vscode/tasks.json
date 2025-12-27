@@ -17,7 +17,8 @@
                 "isDefault": true
             },
             "problemMatcher": ["$gcc"],
-            "detail": "Build with CMake"
+            "detail": "Build with CMake",
+            "dependsOn": "CMake configure (Debug)" 
         }
     ]
 }

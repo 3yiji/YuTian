@@ -82,12 +82,17 @@ Rectangle {
         width: 20; height: 20
         fillMode: Image.PreserveAspectFit
         opacity: 0.85
+
+        MouseArea {
+            anchors.fill: icon
+            onClicked: {
+                if (tf.text.trim().length > 0)
+                    EventBus.searchRequested(tf.text.trim())
+            }
+            hoverEnabled: true
+            onEntered: icon.opacity = 1.0
+            onExited: icon.opacity = 0.85
+        }
     }
-    MouseArea {
-        anchors.fill: icon
-        onClicked: root.searchRequested(tf.text)
-        hoverEnabled: true
-        onEntered: icon.opacity = 1.0
-        onExited: icon.opacity = 0.85
-    }
+    
 }

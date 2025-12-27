@@ -3,11 +3,13 @@
 #include <QQmlContext>
 #include "app.h"
 #include "MainWin.h"
+#include "SearchPage.h"
 
 int app_main(int argc, char *argv[])
 {
     // 注册资源
-    qmlRegisterType<MainWin>("ViewModel", 1, 0, "MainWin");
+    qmlRegisterType<MainWin>("ViewModel", 1, 0, "MainWinVM");
+    qmlRegisterType<SearchPage>("ViewModel", 1, 0, "SearchPageVM");
 
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;

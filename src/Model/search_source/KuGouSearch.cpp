@@ -8,11 +8,17 @@
 #include <QUrlQuery>
 
 KuGouSearch::KuGouSearch(QObject *parent)
-    : QObject(parent)
+    : ISearchSource(parent)
     , m_manager(new QNetworkAccessManager(this))
 {
     connect(m_manager, &QNetworkAccessManager::finished,
             this, &KuGouSearch::onReplyFinished);
+}
+
+// 实现接口方法（调用带分页的版本）
+void KuGouSearch::searchMusic(const QString songName)
+{
+    searchMusic(songName, 1, 100);  // 默认第1页，100条
 }
 
 void KuGouSearch::searchMusic(const QString &keyword, int page, int limit)
@@ -78,7 +84,7 @@ void KuGouSearch::onReplyFinished(QNetworkReply *reply)
     try {
         QList<SongInfo> songs = handleSearchResult(doc);
         int total = root["data"].toObject()["total"].toInt();
-        emit searchFinished(total, songs);
+        emit searchFinished(songs);
     } catch (const std::exception &e) {
         emit searchError(QString("处理结果出错: %1").arg(e.what()));
     }

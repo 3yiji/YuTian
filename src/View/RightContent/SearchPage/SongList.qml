@@ -5,6 +5,6 @@ import QtQuick.Layouts 2.15
 Rectangle { 
     color: "#FFFFFF";
     Label{
-        text: "song list page"
+        text: "song page"
     }
 }
