@@ -36,6 +36,7 @@ add_library(YuTianCore STATIC
 target_include_directories(YuTianCore PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel/common
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/search_source
 )
@@ -63,7 +64,7 @@ file(GLOB_RECURSE QML_FILES
 
 set(qml_singletons
     "${CMAKE_CURRENT_SOURCE_DIR}/src/View/common/Theme.qml"
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/View/common/EventBus.qml"
+    # "${CMAKE_CURRENT_SOURCE_DIR}/src/View/common/EventBus.qml"
 )
 set_source_files_properties(${qml_singletons}       # 设置为单例
     PROPERTIES QT_QML_SINGLETON_TYPE TRUE)

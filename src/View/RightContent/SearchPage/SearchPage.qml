@@ -15,30 +15,30 @@ Rectangle {
 
     }
 
-    Connections{
-        target: EventBus
-        function onSearchRequested(keyword) {   // 函数式写法，参数名匹配信号
-            vm.performSearch(keyword)
-        }
-    }
-
     ColumnLayout{
         anchors.fill: parent
 
         SourceList{
+            vm: vm
         }
 
         Loader{
             id: resultsLoader
             Layout.fillWidth: true
             Layout.fillHeight: true
-            source: pages[0]
+            source: vm.isSearching ? "./Loading.qml" : pages[vm.tabIndex]
 
             property var pages: [
-                "./SongList.qml",               // 歌曲页面
+                "./SongList/SongList.qml",               // 歌曲页面
                 "./SongListList.qml",           // 歌单页面
             ]
+            onLoaded: {
+                if (item && item.hasOwnProperty("vm")) {
+                    item.vm = vm; // 给子页面赋值 vm
+                }
+            }
         }
         
     }
+
 }

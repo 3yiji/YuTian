@@ -6,5 +6,7 @@
     <file>images/search.svg</file>
     <file>images/setting.svg</file>
     <file>images/song list.svg</file>
+    <file>images/plus.svg</file>
+    <file>images/headphones.svg</file>
   </qresource>
 </RCC>
