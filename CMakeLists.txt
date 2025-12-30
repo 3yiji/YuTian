@@ -39,6 +39,7 @@ target_include_directories(YuTianCore PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel/common
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/search_source
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/extras
 )
 
 target_link_libraries(YuTianCore PUBLIC

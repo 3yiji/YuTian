@@ -1,10 +1,18 @@
 #include "SearchSong.h"
+#include "KuWoSearch.h"
 #include "KuGouSearch.h"
+#include "QQSearch.h"
+#include "NetEaseSearch.h"
+#include "MiGuSearch.h"
 
 SearchSong::SearchSong(QObject *parent)
     : QObject(parent)
 {
+    searchSources.insert("KuWo", new KuWoSearch(this));
     searchSources.insert("KuGou", new KuGouSearch(this));
+    searchSources.insert("QQ", new QQSearch(this));
+    searchSources.insert("NetEase", new NetEaseSearch(this));
+    searchSources.insert("MiGu", new MiGuSearch(this));
 }
 
 void SearchSong::getSongList(const QString name)
@@ -29,14 +37,14 @@ void SearchSong::getSongList(const QString name)
             if(numGettedSources == searchSources.size()){ // 如果所有音乐源都已返回结果，发出信号
                 emit songListReady(0, sourceSongList);      // 返回结果
             }
-        });
+        }, Qt::SingleShotConnection);  // 使用 SingleShotConnection 避免重复连接
         connect(searchSource, &ISearchSource::searchError, this, [this, source](const QString &error){
             numGettedSources++;
             qWarning() << "SearchSong: " << source << "error:" << error;
             if(numGettedSources == searchSources.size()){ // 如果所有音乐源都已返回结果，发出信号
                 emit songListReady(0, sourceSongList);      // 返回结果
             }
-        });
+        }, Qt::SingleShotConnection);
         searchSource->searchMusic(name);  // ← 触发搜索
     }    
 }

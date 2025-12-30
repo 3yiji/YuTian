@@ -8,11 +8,12 @@ RowLayout {
     spacing: 10  // 子项间距
 
 
-    property int index: 18
+    property string index: "18"
     property string name: "彩虹(Live) SQ"
     property string singer: "伍佰"
     property string album: "爱上巧克力 电视原声带"
-    property string duration: "03:55"
+    property string interval: "03:55"
+    property string operation: ""
 
     property int fontPixelSize: 18
 
@@ -61,7 +62,7 @@ RowLayout {
 
     // 5. 时长（固定宽）
     Label {
-        text: duration
+        text: interval
         font.pixelSize: fontPixelSize
         Layout.preferredWidth: 100  // 固定宽度
         Layout.fillWidth: true
@@ -69,23 +70,44 @@ RowLayout {
         verticalAlignment: Text.AlignVCenter
     }
 
-    RowLayout{
-        // Layout.fillWidth: 0.1
-    
-        // 6. 耳机图标（固定宽）
-        Image {
-            source: "qrc:/images/headphones.svg"
-            Layout.preferredWidth: fontPixelSize*1.2
-            Layout.preferredHeight: fontPixelSize*1.2
-            // color: "#4CAF50"
-        }
-
-        // 7. +号图标（固定宽）
-        Image {
-            source: "qrc:/images/plus.svg"
-            Layout.preferredWidth: fontPixelSize*1.2
-            Layout.preferredHeight: fontPixelSize*1.2
-            // color: "#4CAF50"
+    Item{
+        width: fontPixelSize*1.2*2+10  // 固定宽度
+        height: fontPixelSize*1.2
+        Loader{
+            sourceComponent: operation !== "" ? operationName : operationIcons
         }
     }
+    
+    Component{
+        id: operationIcons
+        Row{
+            // 6. 耳机图标（固定宽）
+            spacing: 10
+            Image {
+                source: "qrc:/images/headphones.svg"
+                width: fontPixelSize*1.2
+                height: fontPixelSize*1.2
+                // color: "#4CAF50"
+            }
+
+            // 7. +号图标（固定宽）
+            Image {
+                source: "qrc:/images/plus.svg"
+                width: fontPixelSize*1.2
+                height: fontPixelSize*1.2
+                // color: "#4CAF50"
+            }
+        }
+    }
+    Component{
+        id: operationName
+        Label{
+            text: operation
+            font.pixelSize: fontPixelSize
+            width: fontPixelSize*1.2*2+10  // 固定宽度
+            height: fontPixelSize*1.2
+            verticalAlignment: Text.AlignVCenter
+        }
+    }
+
 }

@@ -5,6 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/src/include/**",
+                "${workspaceFolder}/src/include/Model/**",
 
                 "/home/ub24/software/Qt/6.10.1/gcc_64/include",
                 "/home/ub24/software/Qt/6.10.1/gcc_64/include/QtCore",

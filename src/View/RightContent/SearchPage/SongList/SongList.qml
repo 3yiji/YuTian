@@ -20,6 +20,19 @@ Rectangle {
             // width: songScrollView.width
             spacing: 0
 
+            InfoBox {
+                id: infoBoxHeader
+                Layout.fillWidth: true
+                Layout.leftMargin: 10
+                Layout.rightMargin: 10
+                
+                index: "#"
+                name: "歌曲名"
+                singer: "艺术家"
+                album: "专辑名"
+                interval: "时长"
+                operation: "操作"
+            }
             // 示例内容
             Repeater {
                 model: vm.songList && vm.songList.length > 0 ? vm.songList : []
@@ -41,7 +54,7 @@ Rectangle {
                         name: modelData.name
                         singer: modelData.singer
                         album: modelData.album
-                        duration: modelData.duration
+                        interval: modelData.interval
                     }
                 }
 

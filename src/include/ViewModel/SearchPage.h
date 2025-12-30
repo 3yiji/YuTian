@@ -71,7 +71,7 @@ public:
 
     Q_INVOKABLE void performSearch(const QString &keyword);
 
-    QList<QString> sourceList = {"KuWo", "KuGou", "QQ", "NetEase", "Migu"};
+    QList<QString> sourceList = {"KuWo", "KuGou", "QQ", "NetEase", "MiGu"};
 
 signals:
     void srcIndexChanged();
@@ -93,7 +93,7 @@ private:
     void updateSongList();    // 更新 m_songList 的内容
 
     SearchSong* searchSong;
-    int pageSize = 10; // 每页显示的歌曲数量
+    int pageSize = 30; // 每页显示的歌曲数量
 
 private slots:
     void onSearchRequested(const QString &keyword) {

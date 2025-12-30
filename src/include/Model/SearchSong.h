@@ -20,7 +20,7 @@ private:
     QHash<QString, ISearchSource*> searchSources;      // Qt 父对象销毁时，会自动 delete 所有子对象（通过 QObject 的析构函数）
 
     QString songNameLast;
-    QList<QString> sourceList = {"KuWo", "KuGou", "QQ", "NetEase", "Migu"};
+    QList<QString> sourceList = {"KuWo", "KuGou", "QQ", "NetEase", "MiGu"};
     
     QHash<QString, QList<SongInfo>> sourceSongList; 
 

@@ -26,7 +26,7 @@ void SearchPage::performSearch(const QString &keyword)          // 搜索歌曲�
 void SearchPage::updateSongList()    // 更新 m_songList 的内容
 {
                   
-    QString source = sourceList[m_srcIndex]; // 获取当前选择的搜索源名称
+    QString source = sourceList[getSrcIndex()]; // 获取当前选择的搜索源名称
     if (!sourceSongList.contains(source)) {
         qDebug() << "No songs found for source:" << source;
         return;
@@ -44,7 +44,7 @@ void SearchPage::updateSongList()    // 更新 m_songList 的内容
         songMap["name"] = song.name;
         songMap["singer"] = song.singer;
         songMap["album"] = song.album;
-        songMap["duration"] = song.duration;
+        songMap["interval"] = song.interval;
         newSongList.append(songMap);
     }
     setSongList(newSongList);

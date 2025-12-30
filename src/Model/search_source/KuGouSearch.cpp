@@ -108,7 +108,7 @@ QList<SongInfo> KuGouSearch::handleSearchResult(const QJsonDocument &doc)
         info.album = item["album_name"].toString("未知专辑");
         info.duration = item["duration"].toInt();
         info.interval = formatTime(info.duration);
-        info.source = "kg";
+        info.source = "KuGou";
         
         result.append(info);
     }
