@@ -34,7 +34,7 @@ globalThis.lx = {                           // 定义全局 lx 对象
         // 脚本发送 inited 后，模拟工具调用 request 事件（获取音乐 URL）
         if (eventName === globalThis.lx.EVENT_NAMES.inited) {
             globalThis.lx.inited_data = data;
-            mockRequest(globalThis.lx.inited_data.sources);
+            // mockRequest(globalThis.lx.inited_data.sources);
         }
     },
     // 模拟 HTTP 请求（按 API 规范实现）
@@ -136,4 +136,7 @@ if (commentMatch) {
 // 执行脚本（触发初始化和事件）
 // eval(scriptCode);
 require(scriptPath); // 使用 require 执行脚本
+
+console.log(`globalThis: ${JSON.stringify(globalThis.lx)}`);  // 直接打印对象
+console.log(`globalThis.lx.on: ${globalThis.lx.on.toString()}`);  // 打印函数
 

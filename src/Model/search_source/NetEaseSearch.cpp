@@ -19,38 +19,6 @@ void NetEaseSearch::searchMusic(const QString songName)
     searchMusic(songName, 1, 50);  // 默认第1页，50条
 }
 
-// void NetEaseSearch::searchMusic(const QString &keyword, int page, int limit)
-// {
-//     QString url = "/api/cloudsearch/pc";
-//     // 2. 构建搜索参数（和 JS 一致）
-//     QVariantMap searchData;
-//     searchData.insert("s", keyword);          // 搜索关键词
-//     searchData.insert("type", 1);         // 1=单曲
-//     searchData.insert("limit", limit);    // 每页数量
-//     searchData.insert("total", (page == 1)); // page=1 为 true
-//     searchData.insert("offset", limit * (page - 1)); // 偏移量
-    
-//     // 1. 请求 URL
-//     QUrl requestUrl("http://interface.music.163.com/eapi/batch");
-
-//     // 2. 设置请求头（和 JS 完全一致）
-//     QNetworkRequest request(requestUrl);
-//     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
-//     request.setHeader(QNetworkRequest::UserAgentHeader, 
-//                       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36");
-//     request.setRawHeader("origin", "https://music.163.com");
-//     // Cookie（可替换为自己的有效 Cookie）
-//     QString cookie = "os=pc; deviceId=A9C064BB4584D038B1565B58CB05F95290998EE8B025AA2D07AE; osver=Microsoft-Windows-10-Home-China-build-19043-64bit; appver=2.5.2.197409; channel=netease; MUSIC_A=37a11f2eb9de9930cad479b2ad495b0e4c982367fb6f909d9a3f18f876c6b49faddb3081250c4980dd7e19d4bd9bf384e004602712cf2b2b8efaafaab164268a00b47359f85f22705cc95cb6180f3aee40f5be1ebf3148d888aa2d90636647d0c3061cd18d77b7a0; __csrf=05b50d54082694f945d7de75c210ef94; mode=Z7M-KP5(7)GZ; NMTID=00OZLp2VVgq9QdwokUgq3XNfOddQyIAAAF_6i8eJg; ntes_kaola_ad=1";
-//     request.setRawHeader("Cookie", cookie.toUtf8());
-
-//     // 3. 构建加密表单请求体
-//     QUrlQuery formData = eapi(url, searchData);
-//     QByteArray postData = formData.toString(QUrl::FullyEncoded).toUtf8();
-
-//     // 4. 发送 POST 请求
-//     QNetworkReply *reply = m_manager->post(request, postData);
-//     reply->ignoreSslErrors();
-// }
 void NetEaseSearch::searchMusic(const QString &keyword, int page, int limit){
     // 1. 计算偏移量（和 JS 一致）
     int offset = (page - 1) * limit;
@@ -147,52 +115,6 @@ QString NetEaseSearch::formatTime(int seconds)
     int mins = seconds / 60;
     int secs = seconds % 60;
     return QString("%1:%2").arg(mins).arg(secs, 2, 10, QChar('0'));
-}
-
-// -------------------------- 2. AES-128-ECB 加密实现（对应 JS aesEncrypt） --------------------------
-/**
- * @brief AES-128-ECB 加密，返回十六进制大写字符串
- * @param data 待加密的原始数据
- * @param key 加密密钥（eapiKey）
- * @return 加密后的十六进制大写字符串
- */
-QString NetEaseSearch::aesEncryptECB(const QByteArray& data, const QString& key) {
-    QAESEncryption aes(QAESEncryption::AES_128, QAESEncryption::ECB);
-    // 加密：AES-128-ECB + PKCS7 填充
-    QByteArray encrypted = aes.encode(data, key.toUtf8());
-    // 转为十六进制大写字符串（对应 JS toString('hex').toUpperCase()）
-    return QString(encrypted.toHex()).toUpper();
-}
-
-// -------------------------- 3. EAPI 加密核心函数（对应 JS eapi 函数） --------------------------
-/**
- * @brief 实现网易云 EAPI 加密逻辑
- * @param url 请求路径（如 "/api/cloudsearch/pc"）
- * @param data 搜索参数（QVariantMap 转 JSON 字符串）
- * @return 加密后的表单参数（params=加密字符串）
- */
-QUrlQuery NetEaseSearch::eapi(const QString& url, const QVariantMap& data) {
-    // 1. 将 data 转为 JSON 字符串（对应 JS JSON.stringify(object)）
-    QJsonDocument jsonDoc = QJsonDocument::fromVariant(data);
-    QString text = jsonDoc.toJson(QJsonDocument::Compact);
-    
-    // 2. 构建 MD5 消息体：`nobody${url}use${text}md5forencrypt`
-    QString message = QString("nobody%1use%2md5forencrypt").arg(url).arg(text);
-    
-    // 3. MD5 哈希（对应 JS createHash('md5').update(message).digest('hex')）
-    QByteArray md5Digest = QCryptographicHash::hash(message.toUtf8(), QCryptographicHash::Md5);
-    QString digest = QString(md5Digest.toHex()); // 转为十六进制字符串
-    
-    // 4. 构建加密原始数据：${url}-36cd479b6b5-${text}-36cd479b6b5-${digest}
-    QString rawData = QString("%1-36cd479b6b5-%2-36cd479b6b5-%3").arg(url).arg(text).arg(digest);
-    
-    // 5. AES-128-ECB 加密（对应 JS aesEncrypt）
-    QString encryptedParams = aesEncryptECB(rawData.toUtf8(), eapiKey);
-    
-    // 6. 构建表单参数（params=加密字符串）
-    QUrlQuery formData;
-    formData.addQueryItem("params", encryptedParams);
-    return formData;
 }
 
 void printReplyInfo(QNetworkReply* reply) {

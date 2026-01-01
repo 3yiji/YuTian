@@ -39,12 +39,14 @@ target_include_directories(YuTianCore PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel/common
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/search_source
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/extras
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/utils
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/common
 )
 
 target_link_libraries(YuTianCore PUBLIC
     Qt6::Core
     Qt6::Network
+    Qt6::Qml
 )
 
 # ---------------------------主程序-----------------------------
@@ -97,6 +99,11 @@ qt_add_executable(test1
 target_link_libraries(test1 PRIVATE
     YuTianCore
     Qt6::Test
+)
+
+qt_add_resources(test1 "qml_resources"
+    FILES
+        Resources/Resources.qrc
 )
 
 add_test(NAME test1 COMMAND test1)

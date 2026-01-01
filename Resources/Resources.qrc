@@ -8,5 +8,6 @@
     <file>images/song list.svg</file>
     <file>images/plus.svg</file>
     <file>images/headphones.svg</file>
+    <file>music_source/lx-music-source.js</file>
   </qresource>
 </RCC>
