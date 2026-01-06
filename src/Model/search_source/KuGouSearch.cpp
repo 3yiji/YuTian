@@ -21,7 +21,7 @@ void KuGouSearch::searchMusic(const QString songName)
     searchMusic(songName, 1, 100);  // 默认第1页，100条
 }
 
-void KuGouSearch::searchMusic(const QString &keyword, int page, int limit)
+void KuGouSearch::searchMusic(const QString keyword, int page, int limit)
 {
     // 按 TS 版参数构造请求
     QUrl url("https://ioscdn.kugou.com/api/v3/search/song");

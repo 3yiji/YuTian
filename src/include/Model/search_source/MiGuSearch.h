@@ -14,6 +14,7 @@ class MiGuSearch : public ISearchSource
 public:
     explicit MiGuSearch(QObject *parent = nullptr);
     void searchMusic(const QString songName) override;
+    void searchMusic(const QString keyword, int page, int limit) override;
     QString sourceName() const override { return "咪咕音乐"; }
     QString sourceId() const override { return "MiGu"; }
 
@@ -28,7 +29,7 @@ private:
     const QString FIXED_SALT = "yyapp2d16148780a1dcc7408e06336b98cfd50";
 
     QNetworkAccessManager *m_manager;
-    void searchMusic(const QString &keyword, int page, int limit);
+    
     QList<SongInfo> handleSearchResult(const QJsonDocument &doc);
     QString formatTime(int seconds);
 

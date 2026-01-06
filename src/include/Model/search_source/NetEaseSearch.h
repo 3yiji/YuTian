@@ -16,6 +16,7 @@ class NetEaseSearch : public ISearchSource
 public:
     explicit NetEaseSearch(QObject *parent = nullptr);
     void searchMusic(const QString songName) override;
+    void searchMusic(const QString keyword, int page, int limit) override;
     QString sourceName() const override { return "网易云音乐"; }
     QString sourceId() const override { return "NetEase"; }
 
@@ -29,7 +30,7 @@ private:
     QUrlQuery eapi(const QString& url, const QVariantMap& data);
 
     QNetworkAccessManager *m_manager;
-    void searchMusic(const QString &keyword, int page, int limit);
+    
     QList<SongInfo> handleSearchResult(const QJsonDocument &doc);
     QString formatTime(int seconds);
     

@@ -57,6 +57,31 @@
             "miDebuggerPath": "/usr/bin/gdb",
 
             "preLaunchTask": "Qt build"
+        },
+
+        // 配置2：附加调试JS子进程（你原有的配置）
+        {
+        "type": "node",
+        "request": "attach",
+        "name": "Attach to JS子进程",
+        "port": 9229,
+        "restart": true,
+        "skipFiles": ["<node_internals>/**"],
+        "timeout": 10000 // 增加超时时间，避免子进程未启动就附加失败
+        },
+    ],
+
+    // 复合配置：一键启动主进程 + 附加子进程
+    "compounds": [
+        {
+        "name": "主进程+子进程调试",
+        "configurations": [
+            "Qt Test Debug",    // 先启动主进程
+            "Attach to JS子进程" // 再附加子进程
+        ],
+        "stopAll": true, // 停止调试时，同时停止所有关联进程
+        "preLaunchTask": "", // 可选：启动前执行的任务（如清理日志）
+        "postDebugTask": ""  // 可选：调试后执行的任务
         }
     ]
 }

@@ -32,6 +32,7 @@ void SearchSong::getSongList(const QString name)
         if (searchSource->sourceId() != source) continue;
 
         connect(searchSource, &ISearchSource::searchFinished, this, [this, source](const QList<SongInfo> &songList){
+            // qDebug() << "SearchSong: " << source << "got" << songList.size() << "songs";
             numGettedSources++;             // 计数器加一
             sourceSongList[source] = songList;          // 存储该音乐源的搜索结果
             if(numGettedSources == searchSources.size()){ // 如果所有音乐源都已返回结果，发出信号
@@ -39,6 +40,7 @@ void SearchSong::getSongList(const QString name)
             }
         }, Qt::SingleShotConnection);  // 使用 SingleShotConnection 避免重复连接
         connect(searchSource, &ISearchSource::searchError, this, [this, source](const QString &error){
+            // qDebug() << "SearchSong: " << source << "search error:" << error;
             numGettedSources++;
             qWarning() << "SearchSong: " << source << "error:" << error;
             if(numGettedSources == searchSources.size()){ // 如果所有音乐源都已返回结果，发出信号

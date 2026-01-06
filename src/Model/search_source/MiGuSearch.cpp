@@ -19,7 +19,7 @@ void MiGuSearch::searchMusic(const QString songName)
     searchMusic(songName, 1, 50);
 }
 
-void MiGuSearch::searchMusic(const QString &keyword, int page, int limit)
+void MiGuSearch::searchMusic(const QString keyword, int page, int limit)
 {
     // 1. 生成毫秒级时间戳（对应 JS 的 Date.now().toString()）
     QString time = QString::number(QDateTime::currentMSecsSinceEpoch());

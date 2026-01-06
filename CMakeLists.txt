@@ -35,12 +35,14 @@ add_library(YuTianCore STATIC
 # 2) 设置核心库的头文件路径（PUBLIC：表示使用该库的项目也能使用该头文件路径）
 target_include_directories(YuTianCore PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/common
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/ViewModel/common
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/search_source
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/utils
     ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/common
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/include/Model/SongManager
 )
 
 target_link_libraries(YuTianCore PUBLIC

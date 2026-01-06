@@ -19,7 +19,7 @@ void NetEaseSearch::searchMusic(const QString songName)
     searchMusic(songName, 1, 50);  // 默认第1页，50条
 }
 
-void NetEaseSearch::searchMusic(const QString &keyword, int page, int limit){
+void NetEaseSearch::searchMusic(const QString keyword, int page, int limit){
     // 1. 计算偏移量（和 JS 一致）
     int offset = (page - 1) * limit;
 

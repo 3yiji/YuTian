@@ -20,7 +20,7 @@ void KuWoSearch::searchMusic(const QString songName)
     searchMusic(songName, 1, 200);  // 默认第1页，200条
 }
 
-void KuWoSearch::searchMusic(const QString &keyword, int page, int limit)
+void KuWoSearch::searchMusic(const QString keyword, int page, int limit)
 {
     const QString baseUrl = "http://search.kuwo.cn/r.s";
 

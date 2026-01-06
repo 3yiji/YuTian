@@ -1,5 +1,8 @@
 #pragma once
 #include <QProcess>
+#include "NodeProcessManager.h"
+
 namespace GlobalObject {
-    QProcess* nodeProcess = nullptr;
+    extern NodeProcessManager* nodePrMan;
+    extern int nodeRequestId;
 }

@@ -15,6 +15,7 @@ class KuWoSearch : public ISearchSource
 public:
     explicit KuWoSearch(QObject *parent = nullptr);
     void searchMusic(const QString songName) override;
+    void searchMusic(const QString keyword, int page, int limit) override;
     QString sourceName() const override { return "酷我音乐"; }
     QString sourceId() const override { return "KuWo"; }
 
@@ -25,7 +26,7 @@ private:
     QNetworkAccessManager *m_manager;
     QString formatTime(int seconds);
     QList<SongInfo> handleSearchResult(const QJsonArray &doc);
-    void searchMusic(const QString &keyword, int page, int limit);
+    
     QString encodeURIComponent(const QString& str) {
         // 仅保留安全字符（-_.!~*'()），其他字符转 %XX 编码
         return QUrl::toPercentEncoding(str, "-_.!~*'()");

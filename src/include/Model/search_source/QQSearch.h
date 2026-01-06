@@ -14,6 +14,7 @@ class QQSearch : public ISearchSource
 public:
     explicit QQSearch(QObject *parent = nullptr);
     void searchMusic(const QString songName) override;
+    void searchMusic(const QString keyword, int page, int limit) override;
     QString sourceName() const override { return "QQ"; }
     QString sourceId() const override { return "QQ"; }
 
@@ -22,7 +23,7 @@ private slots:
 
 private:
     QNetworkAccessManager *m_manager;
-    void searchMusic(const QString &keyword, int page, int limit);
+    
     QList<SongInfo> handleSearchResult(const QJsonDocument &doc);
     QString formatTime(int seconds);
 };

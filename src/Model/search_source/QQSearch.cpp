@@ -19,7 +19,7 @@ void QQSearch::searchMusic(const QString songName)
     searchMusic(songName, 1, 50);  // 默认第1页，100条
 }
 
-void QQSearch::searchMusic(const QString &keyword, int page, int limit)
+void QQSearch::searchMusic(const QString keyword, int page, int limit)
 {
     // 1. 构建请求 URL
     QUrl url("https://u.y.qq.com/cgi-bin/musicu.fcg");

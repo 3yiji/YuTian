@@ -18,6 +18,7 @@ public:
     explicit KuGouSearch(QObject *parent = nullptr);
     // 实现 ISearchSource 接口
     void searchMusic(const QString songName) override;
+    void searchMusic(const QString keyword, int page, int limit) override;
     QString sourceName() const override { return "酷狗音乐"; }
     QString sourceId() const override { return "KuGou"; }
     
@@ -29,5 +30,5 @@ private:
     QString formatTime(int seconds);
     QList<SongInfo> handleSearchResult(const QJsonDocument &doc);
     // 原有的带分页参数的方法
-    void searchMusic(const QString &keyword, int page, int limit);
+    
 };
