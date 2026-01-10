@@ -145,7 +145,7 @@ function lxRequest(url, options = {}, callback) {
             // 调用回调返回结果
             // callback(null, response, responseBody);
             response.body = responseBody;
-            callback(null, response);
+            callback(null, response, responseBody);
         })
         .catch((err) => {
             // 调试日志：请求错误详情
@@ -177,7 +177,8 @@ function lxRequest(url, options = {}, callback) {
             console.log('==================================================\n');
 
             // 调用回调返回错误
-            callback(new Error(`${errorType}: ${errorMessage}`), null, null);
+            const emptyResponse = {body: null};
+            callback(new Error(`${errorType}: ${errorMessage}`), emptyResponse, null);
         });
 
 

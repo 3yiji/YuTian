@@ -112,7 +112,6 @@ void MusicUrl::downloadSong(QString source, SongInfo songInfo){
     getMusicUrl(source, songInfo);
     connect(this, &MusicUrl::getMusicUrlFinished, this, [this](bool success, SongInfo info){
         if(!success){               // 失败获取音乐链接，直接返回
-            qDebug() << "downloadSong: 获取音乐链接失败";
             emit downloadSongFinished(false, QFileInfo(), info);
             return;
         }

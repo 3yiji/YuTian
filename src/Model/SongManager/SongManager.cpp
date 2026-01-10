@@ -72,7 +72,6 @@ QFuture<QList<SongInfo>> SongManager::getSongInfoList(QString source, QString ke
 
         auto promise = std::make_shared<QPromise<QList<SongInfo>>>();           // 重新用promise包装一下
         connect(searchSource, &ISearchSource::searchFinished, this, [this, source, promise](const QList<SongInfo> &songList) mutable {
-            qDebug() << "Search finished for source:" << source << "with" << songList.size() << "results.";
             QList<SongInfo> modifiedList = songList;  // 复制（必要）
             for(SongInfo &song : modifiedList){         // 修改每个歌曲的信息，添加来源
                 song.source = source;
