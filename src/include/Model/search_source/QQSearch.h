@@ -15,8 +15,8 @@ public:
     explicit QQSearch(QObject *parent = nullptr);
     void searchMusic(const QString songName) override;
     void searchMusic(const QString keyword, int page, int limit) override;
-    QString sourceName() const override { return "QQ"; }
-    QString sourceId() const override { return "QQ"; }
+    QString sourceName() const override { return "QQ音乐"; }
+    QString sourceId() const override { return "tx"; }
 
 private slots:
     void onReplyFinished(QNetworkReply *reply);

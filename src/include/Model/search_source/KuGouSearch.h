@@ -20,7 +20,7 @@ public:
     void searchMusic(const QString songName) override;
     void searchMusic(const QString keyword, int page, int limit) override;
     QString sourceName() const override { return "酷狗音乐"; }
-    QString sourceId() const override { return "KuGou"; }
+    QString sourceId() const override { return "kg"; }
     
 private slots:
     void onReplyFinished(QNetworkReply *reply);

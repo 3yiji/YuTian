@@ -40,7 +40,7 @@ private:
 
     struct RequestInfo{
         QString id;
-        QTimer* timer;
+        std::shared_ptr<QTimer> timer;
         std::function<void(QString, QJsonObject, bool, QString)> callback;
     };
     QHash<QString, RequestInfo> m_requestMap;

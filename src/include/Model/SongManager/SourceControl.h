@@ -3,6 +3,8 @@
 #include "NodeProcessManager.h"
 #include <QFileInfo>
 #include <QHash>
+#include <QFuture>
+#include <QList>
 
 class SourceControl : public QObject
 {
@@ -19,9 +21,7 @@ public:
         QList<QString> qualitys;
     };
 
-    QHash<QString, SourceInfo> getSourceInfoMap(){
-        return sourceInfoMap;
-    }
+    QFuture<QMap<QString, SourceInfo>> getSourceInfoMap();
 
     void test(){
         connect(this, &SourceControl::initSourceFinished, this,
@@ -44,5 +44,9 @@ signals:
 private:
     NodeProcessManager* nodeProcessManager;
     bool initSourceResult = false;
-    QHash<QString, SourceInfo> sourceInfoMap;
+    QMap<QString, SourceInfo> sourceInfoMap;
+    QList<QString> sourcePaThList={
+        "./src/api_lx_source/lx-music-source.js",
+    };
+    bool hasInited = false;
 };

@@ -14,6 +14,7 @@
 #include "NodeProcessManager.h"
 #include "SourceControl.h"
 #include "MusicUrl.h"
+#include "SongManager.h"
 
 
 int main(int argc, char *argv[])
@@ -21,10 +22,8 @@ int main(int argc, char *argv[])
     QCoreApplication app(argc, argv);
 
     NodeProcessManager nodeManager;
-    SourceControl sourceControl(&nodeManager);
-    // sourceControl.test();
-    MusicUrl musicUrl(&nodeManager, &sourceControl);
-    musicUrl.test();
+    SongManager songManager(&nodeManager);
+    songManager.test();
 
     return app.exec();
 }

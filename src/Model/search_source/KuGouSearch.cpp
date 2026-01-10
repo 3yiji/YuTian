@@ -41,6 +41,7 @@ void KuGouSearch::searchMusic(const QString keyword, int page, int limit)
     QNetworkRequest request(url);
     request.setRawHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
     request.setRawHeader("Referer", "https://kugou.com");
+    request.setTransferTimeout(5000); // 设置超时时间为 5 秒
 
     // 调试环境关闭证书校验以绕过域名不匹配；生产务必移除
     QSslConfiguration sslConf = QSslConfiguration::defaultConfiguration();

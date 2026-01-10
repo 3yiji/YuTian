@@ -22,6 +22,7 @@ public:
         info.singer = "赵雷";
         info.songmid = "1106531626";
         info.id = "1106531626";
+        info.quality = "128k";
 
         connect(this, &MusicUrl::downloadSongFinished, this,
                 [](bool success, QFileInfo fileInfo, SongInfo songInfo){

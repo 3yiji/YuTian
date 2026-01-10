@@ -14,16 +14,16 @@ MusicUrl::MusicUrl(NodeProcessManager* nodeManager, SourceControl* sourceControl
 }
 
 void MusicUrl::getMusicUrl(QString source, SongInfo songinfo){
-    if(!pendingRequests.isEmpty()){                     // 有未完成请求，拒绝新请求
-        emit getMusicUrlFinished(false, SongInfo());
-        return;
-    }
+    // if(!pendingRequests.isEmpty()){                     // 有未完成请求，拒绝新请求
+    //     emit getMusicUrlFinished(false, SongInfo());
+    //     return;
+    // }
     // 准备发送给 Node.js 进程的请求数据
     QJsonObject requestParams = QJsonObject{
         {"source", source},
         {"action", "musicUrl"},
         {"info", QJsonObject{
-            {"type", "128k"},
+            {"type", songinfo.quality},
             {"musicInfo", QJsonObject{
                 {"name", songinfo.name},
                 {"singer", songinfo.singer},
@@ -46,49 +46,73 @@ void MusicUrl::getMusicUrl(QString source, SongInfo songinfo){
         {"params", requestParams}
     };
 
-    nodeProcessManager->request(requestId, requestBody, timeout);
+    nodeProcessManager->request(requestId, requestBody, timeout,
+        [this, songinfo](QString id, QJsonObject responseBody, bool success, QString errorMsg){
+            if (!success) {
+                qWarning() << "NodeProcessManager response error:" << errorMsg;
+                emit getMusicUrlFinished(false, SongInfo());
+                return;
+            }
+            // 处理返回的数据
+            if (responseBody.value("success").toBool() == false) {
+                emit getMusicUrlFinished(false, SongInfo());
+                return;
+            }
+
+            // 验证url是否可用
+            QString musicUrl = responseBody["data"].toString();
+            QUrl url(musicUrl);
+            if (!url.isValid()) {
+                emit getMusicUrlFinished(false, SongInfo());
+                return;
+            }
+            SongInfo songinfo_temp = songinfo;
+            songinfo_temp.musicUrl = musicUrl;
+            emit getMusicUrlFinished(true, songinfo_temp);
+        });
 }
 
 void MusicUrl::handleMatchedResponse(QString requestId, QJsonObject responseBody, bool success, QString errorMsg){
     
     
-    if(!pendingRequests.contains(requestId)) return; // 非匹配请求，忽略
+    // if(!pendingRequests.contains(requestId)) return; // 非匹配请求，忽略
 
-    if (!success) {
-        qWarning() << "NodeProcessManager response error:" << errorMsg;
-        emit getMusicUrlFinished(false, SongInfo());
-        return;
-    }
-    // 处理返回的数据
-    if (responseBody.value("success").toBool() == false) {
-        emit getMusicUrlFinished(false, SongInfo());
-        return;
-    }
+    // if (!success) {
+    //     qWarning() << "NodeProcessManager response error:" << errorMsg;
+    //     emit getMusicUrlFinished(false, SongInfo());
+    //     return;
+    // }
+    // // 处理返回的数据
+    // if (responseBody.value("success").toBool() == false) {
+    //     emit getMusicUrlFinished(false, SongInfo());
+    //     return;
+    // }
 
-    // 验证url是否可用
-    QString musicUrl = responseBody["data"].toString();
-    QUrl url(musicUrl);
-    if (!url.isValid()) {
-        emit getMusicUrlFinished(false, SongInfo());
-        return;
-    }
+    // // 验证url是否可用
+    // QString musicUrl = responseBody["data"].toString();
+    // QUrl url(musicUrl);
+    // if (!url.isValid()) {
+    //     emit getMusicUrlFinished(false, SongInfo());
+    //     return;
+    // }
 
-    SongInfo songinfo = pendingRequests.value(requestId);
-    songinfo.musicUrl = musicUrl;
-    emit getMusicUrlFinished(true, songinfo);
-    pendingRequests.remove(requestId);
+    // SongInfo songinfo = pendingRequests.value(requestId);
+    // songinfo.musicUrl = musicUrl;
+    // emit getMusicUrlFinished(true, songinfo);
+    // pendingRequests.remove(requestId);
 }
 
 void MusicUrl::downloadSong(QString source, SongInfo songInfo){ 
-    QString savePath = songDownloadDir.filePath(songInfo.name + "-" + songInfo.singer + ".mp3");
-    if(QFile::exists(savePath)){          // 文件已存在，直接返回成功
-        emit downloadSongFinished(true, QFileInfo(savePath), songInfo);
-        return;
-    }
+    QString savePath = songDownloadDir.filePath(songInfo.name + "-" + songInfo.singer + "-" + songInfo.source + ".mp3");
+    // if(QFile::exists(savePath)){          // 文件已存在，直接返回成功
+    //     emit downloadSongFinished(true, QFileInfo(savePath), songInfo);
+    //     return;
+    // }
 
     getMusicUrl(source, songInfo);
     connect(this, &MusicUrl::getMusicUrlFinished, this, [this](bool success, SongInfo info){
         if(!success){               // 失败获取音乐链接，直接返回
+            qDebug() << "downloadSong: 获取音乐链接失败";
             emit downloadSongFinished(false, QFileInfo(), info);
             return;
         }
@@ -116,7 +140,7 @@ void MusicUrl::downloadSong(QString source, SongInfo songInfo){
             }
 
             // 保存文件到本地
-            QString savePath = songDownloadDir.filePath(info.name + "-" + info.singer + ".mp3");
+            QString savePath = songDownloadDir.filePath(info.name + "-" + info.singer + "-" + info.source + ".mp3");
             // 确保下载目录存在
             if (!songDownloadDir.mkpath(".")) {
                 qDebug() << "创建下载目录失败：" << songDownloadDir.absolutePath();

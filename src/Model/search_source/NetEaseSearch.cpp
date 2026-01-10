@@ -37,6 +37,7 @@ void NetEaseSearch::searchMusic(const QString keyword, int page, int limit){
     request.setHeader(QNetworkRequest::UserAgentHeader, USER_AGENT);
     request.setRawHeader("Referer", "https://music.163.com/");
     request.setRawHeader("Origin", "https://music.163.com");
+    request.setTransferTimeout(5000); // 设置超时时间为 5 秒
     // 可选：关闭 HTTPS 证书校验（某些环境需要，对应 JS 的 rejectUnauthorized: false）
     // QSslConfiguration config = request.sslConfiguration();
     // config.setPeerVerifyMode(QSslSocket::VerifyNone);

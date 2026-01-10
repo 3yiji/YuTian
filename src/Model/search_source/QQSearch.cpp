@@ -31,7 +31,8 @@ void QQSearch::searchMusic(const QString keyword, int page, int limit)
     request.setHeader(QNetworkRequest::UserAgentHeader, "QQMusic 14090508(android 12)"); // 模拟客户端 UA
     request.setRawHeader("Connection", "keep-alive"); // 复用连接
     request.setRawHeader("Accept", "application/json"); // 接收 JSON 响应
-
+    request.setTransferTimeout(5000); // 设置超时时间为 5 秒
+    
     // 3. 构建 JSON 请求体（对应 JS 的 body 部分）
     QJsonObject commObj; // comm 子对象
     commObj.insert("ct", 11);
@@ -89,6 +90,7 @@ void QQSearch::searchMusic(const QString keyword, int page, int limit)
     QByteArray postData = jsonDoc.toJson(QJsonDocument::Compact); // Compact 去掉冗余空格，减小体积
 
     QNetworkReply *reply = m_manager->post(request, postData);
+    // Qt 6.2+ 使用 request.setTransferTimeout() 已设置超时，无需手动 QTimer
 }
 
 void QQSearch::onReplyFinished(QNetworkReply *reply)
@@ -161,7 +163,7 @@ QList<SongInfo> QQSearch::handleSearchResult(const QJsonDocument &doc)
                         .toString("未知专辑");
         info.duration = item["interval"].toInt();
         info.interval = formatTime(info.duration); 
-        info.source = "QQ";
+        info.source = "tx";  // 与 SongManager 中注册的 key 一致
         info.songmid = item["mid"].toString();
 
         result.append(info);

@@ -10,23 +10,21 @@ NodeProcessManager::NodeProcessManager(QObject *parent)
     : QObject(parent)
 {
     process = new QProcess(this);         // 启动 Node.js 进程
+    connect(process, &QProcess::readyReadStandardError, this, [this]() {
+        qDebug() << "Node.js stderr:" << process->readAllStandardError();
+    });
     process->start("node", {
-    "--inspect=9229",          // node命令的调试参数（先写）
-    "src/api_lx_source/node_runner.js"  // 脚本文件路径（后写）
-});
+        "--inspect=9229",          // node命令的调试参数（先写）
+        "src/api_lx_source/node_runner.js"  // 脚本文件路径（后写）
+    });
     if (!process->waitForStarted()) {
         qFatal("Node start failed");
     }
-    qDebug() << "Node.js process started with PID:" << process->processId();
+    qDebug() << "Node.js process started with PID2:" << process->processId();
     connect(process, &QProcess::readyReadStandardOutput, this, &NodeProcessManager::onReadyReadOutput);
 }   
 
 void NodeProcessManager::request(QString id, QJsonObject requestBody, int timeout, std::function<void((QString, QJsonObject, bool, QString))> callback){
-    // if(m_isProcessReady == false){
-    //     emit responseReceived(id, QJsonObject(), false, "Node.js 进程未就绪");
-    //     return;
-    // }
-
     // 生成唯一请求ID
     QString requestId = QString::number(++m_requestIdCounter);
     
@@ -34,10 +32,11 @@ void NodeProcessManager::request(QString id, QJsonObject requestBody, int timeou
     requestObj["id"] = requestId;
     requestObj["body"] = requestBody;
     QJsonDocument doc(requestObj);
+    qDebug().noquote() << "Send JSON:" << QJsonDocument(doc).toJson(QJsonDocument::Indented);
     QByteArray sendData = doc.toJson(QJsonDocument::Compact) + '\n';
     
     // 2. 创建超时定时器
-    QTimer *timeoutTimer = new QTimer(this);
+    auto timeoutTimer = std::make_shared<QTimer>(this);
     timeoutTimer->setSingleShot(true);  
     timeoutTimer->setInterval(timeout);
 
@@ -49,12 +48,14 @@ void NodeProcessManager::request(QString id, QJsonObject requestBody, int timeou
     m_requestMap[requestId] = info;
 
     // 4. 绑定超时信号
-    connect(timeoutTimer, &QTimer::timeout, this, [this, requestId]() {
+    connect(timeoutTimer.get(), &QTimer::timeout, this, [this, requestId]() {
         if (m_requestMap.contains(requestId)) {
             RequestInfo requestInfo = m_requestMap[requestId];
             emit responseReceived(requestInfo.id, QJsonObject(), false, "请求超时");
-
-            delete requestInfo.timer;               // 释放定时器资源
+            if(requestInfo.callback){                           // 调用回调函数
+                requestInfo.callback(requestInfo.id, QJsonObject(), false, "请求超时");
+            }
+            qDebug() << "Request ID:" << requestId << "timed out.";
             m_requestMap.remove(requestId);                 // 移除请求记录
         }
     }, Qt::SingleShotConnection);
@@ -62,8 +63,13 @@ void NodeProcessManager::request(QString id, QJsonObject requestBody, int timeou
     // 启动定时器
     timeoutTimer->start();
         
-    process->write(sendData);                  // 写入数据
-    process->waitForBytesWritten(30000);      // 最多等待30秒写入完成
+    // process->write(sendData);                  // 写入数据
+    // process->waitForBytesWritten(30000);      // 最多等待30秒写入完成
+    qint64 bytesWritten = process->write(sendData);
+    if (bytesWritten == -1) {
+        qWarning() << "Failed to write to Node.js process";
+        return;
+    }
 }
 
 void NodeProcessManager::onReadyReadOutput(){                   // 读取 Node.js 输出
@@ -80,6 +86,7 @@ void NodeProcessManager::onReadyReadOutput(){                   // 读取 Node.j
         }
 
         QJsonObject obj = doc.object();
+        qDebug().noquote() << "Received JSON:" << QJsonDocument(obj).toJson(QJsonDocument::Indented);
         QString requestId = obj.value("id").toString();
         QJsonObject responseBody = obj.value("responseBody").toObject();
         if (m_requestMap.contains(requestId)) {                     // 匹配请求ID
@@ -88,7 +95,6 @@ void NodeProcessManager::onReadyReadOutput(){                   // 读取 Node.j
             if(requestInfo.callback){                           // 调用回调函数
                 requestInfo.callback(requestInfo.id, responseBody, true, "");
             }
-            delete requestInfo.timer;               // 释放定时器资源
             m_requestMap.remove(requestId);                 // 移除请求记录
             
         }
@@ -99,11 +105,6 @@ void NodeProcessManager::onReadyReadOutput(){                   // 读取 Node.j
             else{
                 emit responseReceived(requestId, responseBody, true, "");
             }
-        }
-        else if(requestId == initSourceId){
-            bool initSuccess = responseBody["sucess"].toBool();
-
-            emit initSourceFinished(initSuccess);
         }
     }
 }

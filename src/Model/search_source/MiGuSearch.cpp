@@ -54,7 +54,7 @@ void MiGuSearch::searchMusic(const QString keyword, int page, int limit)
     // User-Agent（和JS完全一致）
     request.setHeader(QNetworkRequest::UserAgentHeader, 
                       "Mozilla/5.0 (Linux; U; Android 11.0.0; zh-cn; MI 11 Build/OPR1.170623.032) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30");
-
+    request.setTransferTimeout(5000); // 设置超时时间为 5 秒
     // 5. 发送GET请求
     
     QNetworkReply* reply = m_manager->get(request);

@@ -1,4 +1,19 @@
 // node_runner.js
+
+// 添加全局未捕获异常处理，防止进程崩溃（必须放在最前面）
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err.message);
+    if (err.stack) console.error(err.stack);
+    // 显式不退出，保持进程运行
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise);
+    console.error('Reason:', reason);
+    // 显式不退出，保持进程运行
+});
+
+
 import readline from "readline";
 
 import './api_init.js'; // 初始化 globalThis.lx 对象
@@ -114,29 +129,59 @@ const handlers = {
 
 };
 
-rl.on("line", async (line) => {
-  try {
-    const msg = JSON.parse(line);
-    const { id, body} = msg;
-    const {method, params} = body;
+// rl.on("line", async (line) => {
+//   try {
+//     const msg = JSON.parse(line);
+//     const { id, body} = msg;
+//     const {method, params} = body;
 
-    if (!handlers[method]) {
-      throw new Error("unknown method");
+//     if (!handlers[method]) {
+//       throw new Error("unknown method");
+//     }
+
+//     const result = await handlers[method](params);
+
+//     process.stdout.write(JSON.stringify({
+//       id,
+//       responseBody: result
+//     }) + "\n");
+
+//   } 
+//   catch (e) {
+//     process.stdout.write(JSON.stringify({
+//       error: e.message
+//     }) + "\n");
+//   }
+// });
+
+// 创建处理队列
+let processingQueue = Promise.resolve();
+
+rl.on("line", (line) => {
+  // 将每个请求加入队列，确保顺序执行
+  processingQueue = processingQueue.then(async () => {
+    try {
+      const msg = JSON.parse(line);
+      const { id, body } = msg;
+      const { method, params } = body;
+
+      if (!handlers[method]) {
+        throw new Error("unknown method");
+      }
+
+      const result = await handlers[method](params);
+
+      process.stdout.write(JSON.stringify({
+        id,
+        responseBody: result
+      }) + "\n");
+
+    } catch (e) {
+      process.stdout.write(JSON.stringify({
+        error: e.message
+      }) + "\n");
     }
-
-    const result = await handlers[method](params);
-
-    process.stdout.write(JSON.stringify({
-      id,
-      responseBody: result
-    }) + "\n");
-
-  } 
-  catch (e) {
-    process.stdout.write(JSON.stringify({
-      error: e.message
-    }) + "\n");
-  }
+  });
 });
 
 process.stdout.write(JSON.stringify({

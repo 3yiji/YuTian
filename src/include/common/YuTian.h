@@ -14,4 +14,5 @@ struct SongInfo {
     QString quality;
     QString musicUrl;
     QString hash;
+    QString filePath;
 };

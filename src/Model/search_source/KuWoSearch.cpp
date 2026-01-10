@@ -57,6 +57,7 @@ void KuWoSearch::searchMusic(const QString keyword, int page, int limit)
 
     // 酷我API通常需要csrf和cookie，这里仅做演示，实际项目需处理cookie和csrf
     request.setRawHeader("csrf", "");// 可根据实际情况设置
+    request.setTransferTimeout(5000); // 设置超时时间为 5 秒
 
     // QSslConfiguration sslConf = QSslConfiguration::defaultConfiguration();
     // sslConf.setPeerVerifyMode(QSslSocket::VerifyNone);

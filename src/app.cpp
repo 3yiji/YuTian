@@ -12,8 +12,6 @@
 int app_main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);        // 创建应用程序实例
-    NodeProcessManager* nodeManager = new NodeProcessManager();
-    GlobalObject::nodePrMan = nodeManager;
 
     Model model(&app);                             // 创建模型实例
 
